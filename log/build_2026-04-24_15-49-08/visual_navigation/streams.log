@@ -1,0 +1,31 @@
+[2.708s] Invoking command in '/home/menna/visual_nav_ws/visual_navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/menna/visual_nav_ws/build/visual_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/visual_navigation build --build-base /home/menna/visual_nav_ws/build/visual_navigation/build install --record /home/menna/visual_nav_ws/build/visual_navigation/install.log --single-version-externally-managed install_data
+[3.548s] running egg_info
+[3.608s] writing ../build/visual_navigation/visual_navigation.egg-info/PKG-INFO
+[3.609s] writing dependency_links to ../build/visual_navigation/visual_navigation.egg-info/dependency_links.txt
+[3.609s] writing entry points to ../build/visual_navigation/visual_navigation.egg-info/entry_points.txt
+[3.610s] writing requirements to ../build/visual_navigation/visual_navigation.egg-info/requires.txt
+[3.610s] writing top-level names to ../build/visual_navigation/visual_navigation.egg-info/top_level.txt
+[3.744s] reading manifest file '../build/visual_navigation/visual_navigation.egg-info/SOURCES.txt'
+[3.746s] writing manifest file '../build/visual_navigation/visual_navigation.egg-info/SOURCES.txt'
+[3.746s] running build
+[3.747s] running build_py
+[3.747s] copying visual_navigation/motion_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+[3.748s] running install
+[3.766s] running install_lib
+[3.829s] copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/motion_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+[3.831s] byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/motion_node.py to motion_node.cpython-312.pyc
+[3.833s] running install_data
+[3.834s] running install_egg_info
+[3.904s] removing '/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation-0.0.0-py3.12.egg-info' (and everything under it)
+[3.905s] Copying ../build/visual_navigation/visual_navigation.egg-info to /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation-0.0.0-py3.12.egg-info
+[3.907s] running install_scripts
+[4.338s] Installing action_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[4.339s] Installing camera_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[4.339s] Installing depth_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[4.339s] Installing motion_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[4.339s] Installing navigation_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[4.340s] Installing object_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[4.340s] Installing roi_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[4.340s] Installing vo_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[4.341s] writing list of installed files to '/home/menna/visual_nav_ws/build/visual_navigation/install.log'
+[4.416s] Invoked command in '/home/menna/visual_nav_ws/visual_navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/menna/visual_nav_ws/build/visual_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/visual_navigation build --build-base /home/menna/visual_nav_ws/build/visual_navigation/build install --record /home/menna/visual_nav_ws/build/visual_navigation/install.log --single-version-externally-managed install_data

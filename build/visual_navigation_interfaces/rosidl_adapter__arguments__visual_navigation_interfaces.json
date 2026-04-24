@@ -1,0 +1,6 @@
+{
+  "package_name": "visual_navigation_interfaces",
+  "non_idl_tuples": [
+    "/home/menna/visual_nav_ws/visual_navigation_interfaces:action/Navigate.action"
+  ]
+}

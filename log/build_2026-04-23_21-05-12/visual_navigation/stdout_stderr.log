@@ -1,0 +1,66 @@
+running egg_info
+creating ../build/visual_navigation/visual_navigation.egg-info
+writing ../build/visual_navigation/visual_navigation.egg-info/PKG-INFO
+writing dependency_links to ../build/visual_navigation/visual_navigation.egg-info/dependency_links.txt
+writing entry points to ../build/visual_navigation/visual_navigation.egg-info/entry_points.txt
+writing requirements to ../build/visual_navigation/visual_navigation.egg-info/requires.txt
+writing top-level names to ../build/visual_navigation/visual_navigation.egg-info/top_level.txt
+writing manifest file '../build/visual_navigation/visual_navigation.egg-info/SOURCES.txt'
+reading manifest file '../build/visual_navigation/visual_navigation.egg-info/SOURCES.txt'
+writing manifest file '../build/visual_navigation/visual_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/menna/visual_nav_ws/build/visual_navigation/build
+creating /home/menna/visual_nav_ws/build/visual_navigation/build/lib
+creating /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+copying visual_navigation/action_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+copying visual_navigation/camera_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+copying visual_navigation/__init__.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+copying visual_navigation/roi_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+copying visual_navigation/vo_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+copying visual_navigation/object_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+copying visual_navigation/motion_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+copying visual_navigation/depth_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+copying visual_navigation/navigation_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+running install
+running install_lib
+creating /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/action_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/camera_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/__init__.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/roi_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/vo_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/object_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/motion_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/depth_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/navigation_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/action_node.py to action_node.cpython-312.pyc
+byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/camera_node.py to camera_node.cpython-312.pyc
+byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/roi_node.py to roi_node.cpython-312.pyc
+byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/vo_node.py to vo_node.cpython-312.pyc
+byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/object_node.py to object_node.cpython-312.pyc
+byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/motion_node.py to motion_node.cpython-312.pyc
+byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/depth_node.py to depth_node.cpython-312.pyc
+byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/navigation_node.py to navigation_node.cpython-312.pyc
+running install_data
+creating /home/menna/visual_nav_ws/install/visual_navigation/share/ament_index
+creating /home/menna/visual_nav_ws/install/visual_navigation/share/ament_index/resource_index
+creating /home/menna/visual_nav_ws/install/visual_navigation/share/ament_index/resource_index/packages
+copying resource/visual_navigation -> /home/menna/visual_nav_ws/install/visual_navigation/share/ament_index/resource_index/packages
+copying package.xml -> /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation
+creating /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/launch
+creating /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/models
+copying models/depth_anything_v2_vits.pth -> /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/models
+running install_egg_info
+Copying ../build/visual_navigation/visual_navigation.egg-info to /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation-0.0.0-py3.12.egg-info
+running install_scripts
+Installing action_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+Installing camera_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+Installing depth_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+Installing motion_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+Installing navigation_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+Installing object_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+Installing roi_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+Installing vo_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+writing list of installed files to '/home/menna/visual_nav_ws/build/visual_navigation/install.log'
