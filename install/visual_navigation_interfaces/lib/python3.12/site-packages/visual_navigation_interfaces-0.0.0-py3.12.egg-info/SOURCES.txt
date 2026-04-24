@@ -1,8 +1,0 @@
-setup.py
-visual_navigation_interfaces/__init__.py
-visual_navigation_interfaces.egg-info/PKG-INFO
-visual_navigation_interfaces.egg-info/SOURCES.txt
-visual_navigation_interfaces.egg-info/dependency_links.txt
-visual_navigation_interfaces.egg-info/top_level.txt
-visual_navigation_interfaces/action/__init__.py
-visual_navigation_interfaces/action/_navigate.py
