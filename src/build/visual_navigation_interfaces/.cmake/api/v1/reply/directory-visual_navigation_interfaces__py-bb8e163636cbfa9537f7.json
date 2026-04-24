@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "visual_navigation_interfaces__py",
+		"source" : "/home/menna/visual_nav_ws/src/build/visual_navigation_interfaces/visual_navigation_interfaces__py"
+	}
+}

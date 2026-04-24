@@ -1,0 +1,13 @@
+{
+  "package_name": "visual_navigation_interfaces",
+  "output_dir": "/home/menna/visual_nav_ws/src/build/visual_navigation_interfaces/rosidl_generator_type_description/visual_navigation_interfaces",
+  "idl_tuples": [
+    "/home/menna/visual_nav_ws/src/build/visual_navigation_interfaces/rosidl_adapter/visual_navigation_interfaces:action/Navigate.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs"
+  ]
+}
