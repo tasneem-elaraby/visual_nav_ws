@@ -1,0 +1,652 @@
+[0.000000] (-) TimerEvent: {}
+[0.000225] (visual_navigation) JobQueued: {'identifier': 'visual_navigation', 'dependencies': OrderedDict()}
+[0.000290] (visual_navigation_interfaces) JobQueued: {'identifier': 'visual_navigation_interfaces', 'dependencies': OrderedDict()}
+[0.000329] (visual_navigation) JobStarted: {'identifier': 'visual_navigation'}
+[0.026149] (visual_navigation_interfaces) JobStarted: {'identifier': 'visual_navigation_interfaces'}
+[0.093179] (-) TimerEvent: {}
+[0.194082] (-) TimerEvent: {}
+[0.295718] (-) TimerEvent: {}
+[0.401964] (-) TimerEvent: {}
+[0.502362] (-) TimerEvent: {}
+[0.602867] (-) TimerEvent: {}
+[0.703228] (-) TimerEvent: {}
+[0.805947] (-) TimerEvent: {}
+[0.908312] (-) TimerEvent: {}
+[0.924272] (visual_navigation_interfaces) JobProgress: {'identifier': 'visual_navigation_interfaces', 'progress': 'cmake'}
+[0.925162] (visual_navigation_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/menna/visual_nav_ws/src/visual_navigation_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/menna/visual_nav_ws/install/visual_navigation_interfaces'], 'cwd': '/home/menna/visual_nav_ws/build/visual_navigation_interfaces', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/home/menna/gz_ws/install/ardupilot_gazebo/lib/ardupilot_gazebo/:/home/menna/gz_ws/install/ardupilot_gazebo/lib/ardupilot_gazebo:/home/menna/gz_ws/ardupilot_gazebo/build:/home/menna/gz_ws/build', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2717-2-menna-ThinkPad-P50_TIME169719', 'GZ_SIM_RESOURCE_PATH': '/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/worlds:/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/models:/opt/ros/jazzy/share:/home/menna/gz_ws/ardupilot_gazebo/models:/home/menna/gz_ws/models', 'USER': 'menna', 'LC_TIME': 'ar_EG.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/menna', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'LC_MONETARY': 'ar_EG.UTF-8', 'MANAGERPID': '2224', 'SYSTEMD_EXEC_PID': '2717', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4145', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/menna/visual_nav_ws/install:/home/menna/gz_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'menna', 'JOURNAL_STREAM': '8:19988', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'menna', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/lib/ccache:/home/menna/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/menna/venv-ardupilot/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/menna-ThinkPad-P50:@/tmp/.ICE-unix/2682,unix/menna-ThinkPad-P50:/tmp/.ICE-unix/2682', 'INVOCATION_ID': '1038f427023946c293310f2df56be981', 'GTK3_MODULES': 'xapp-gtk3-module', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv-ardupilot)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces:/home/menna/visual_nav_ws/install/visual_navigation:/home/menna/gz_ws/install/ardupilot_gazebo:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:24a88907-9b11-4608-9b60-2e712a8c03ab', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'VIRTUAL_ENV': '/home/menna/venv-ardupilot', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/menna/visual_nav_ws/build/visual_navigation_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SDF_PATH': '/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/worlds:/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/models', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages:/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages:/home/menna/Depth-Anything-V2:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces:/home/menna/gz_ws/install/ardupilot_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy'}), 'shell': False}
+[1.009446] (-) TimerEvent: {}
+[1.109917] (-) TimerEvent: {}
+[1.212945] (-) TimerEvent: {}
+[1.313321] (-) TimerEvent: {}
+[1.413715] (-) TimerEvent: {}
+[1.478138] (visual_navigation_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.515010] (-) TimerEvent: {}
+[1.615942] (-) TimerEvent: {}
+[1.716952] (-) TimerEvent: {}
+[1.817300] (-) TimerEvent: {}
+[1.858198] (visual_navigation_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.917403] (-) TimerEvent: {}
+[1.970097] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.017526] (-) TimerEvent: {}
+[2.118975] (-) TimerEvent: {}
+[2.219331] (-) TimerEvent: {}
+[2.319652] (-) TimerEvent: {}
+[2.364999] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.396603] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[2.397375] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.399558] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.419746] (-) TimerEvent: {}
+[2.437977] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.519857] (-) TimerEvent: {}
+[2.620240] (-) TimerEvent: {}
+[2.724937] (-) TimerEvent: {}
+[2.821060] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.825018] (-) TimerEvent: {}
+[2.845603] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[2.846551] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.847875] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.874698] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.925122] (-) TimerEvent: {}
+[3.025945] (-) TimerEvent: {}
+[3.127351] (-) TimerEvent: {}
+[3.229184] (-) TimerEvent: {}
+[3.256695] (visual_navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/visual_navigation', 'build', '--build-base', '/home/menna/visual_nav_ws/build/visual_navigation/build', 'install', '--record', '/home/menna/visual_nav_ws/build/visual_navigation/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/menna/visual_nav_ws/src/visual_navigation', 'env': {'GZ_SIM_SYSTEM_PLUGIN_PATH': '/home/menna/gz_ws/install/ardupilot_gazebo/lib/ardupilot_gazebo/:/home/menna/gz_ws/install/ardupilot_gazebo/lib/ardupilot_gazebo:/home/menna/gz_ws/ardupilot_gazebo/build:/home/menna/gz_ws/build', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2717-2-menna-ThinkPad-P50_TIME169719', 'GZ_SIM_RESOURCE_PATH': '/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/worlds:/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/models:/opt/ros/jazzy/share:/home/menna/gz_ws/ardupilot_gazebo/models:/home/menna/gz_ws/models', 'USER': 'menna', 'LC_TIME': 'ar_EG.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/menna', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'LC_MONETARY': 'ar_EG.UTF-8', 'MANAGERPID': '2224', 'SYSTEMD_EXEC_PID': '2717', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4145', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/menna/visual_nav_ws/install:/home/menna/gz_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'menna', 'JOURNAL_STREAM': '8:19988', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'menna', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/lib/ccache:/home/menna/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/menna/venv-ardupilot/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/menna-ThinkPad-P50:@/tmp/.ICE-unix/2682,unix/menna-ThinkPad-P50:/tmp/.ICE-unix/2682', 'INVOCATION_ID': '1038f427023946c293310f2df56be981', 'GTK3_MODULES': 'xapp-gtk3-module', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv-ardupilot)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces:/home/menna/visual_nav_ws/install/visual_navigation:/home/menna/gz_ws/install/ardupilot_gazebo:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:24a88907-9b11-4608-9b60-2e712a8c03ab', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'VIRTUAL_ENV': '/home/menna/venv-ardupilot', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/menna/visual_nav_ws/build/visual_navigation', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SDF_PATH': '/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/worlds:/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/models', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/menna/visual_nav_ws/build/visual_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages:/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages:/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages:/home/menna/Depth-Anything-V2:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces:/home/menna/gz_ws/install/ardupilot_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[3.329286] (-) TimerEvent: {}
+[3.431933] (-) TimerEvent: {}
+[3.534934] (-) TimerEvent: {}
+[3.583008] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Found Python3: /home/menna/venv-ardupilot/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.635037] (-) TimerEvent: {}
+[3.735522] (-) TimerEvent: {}
+[3.835943] (-) TimerEvent: {}
+[3.936380] (-) TimerEvent: {}
+[4.005462] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[4.032104] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.038583] (-) TimerEvent: {}
+[4.138961] (-) TimerEvent: {}
+[4.242199] (-) TimerEvent: {}
+[4.287025] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.343969] (-) TimerEvent: {}
+[4.402784] (visual_navigation) StdoutLine: {'line': b'running egg_info\n'}
+[4.403344] (visual_navigation) StdoutLine: {'line': b'creating ../../build/visual_navigation/visual_navigation.egg-info\n'}
+[4.444036] (-) TimerEvent: {}
+[4.454863] (visual_navigation) StdoutLine: {'line': b'writing ../../build/visual_navigation/visual_navigation.egg-info/PKG-INFO\n'}
+[4.455323] (visual_navigation) StdoutLine: {'line': b'writing dependency_links to ../../build/visual_navigation/visual_navigation.egg-info/dependency_links.txt\n'}
+[4.455753] (visual_navigation) StdoutLine: {'line': b'writing entry points to ../../build/visual_navigation/visual_navigation.egg-info/entry_points.txt\n'}
+[4.456076] (visual_navigation) StdoutLine: {'line': b'writing requirements to ../../build/visual_navigation/visual_navigation.egg-info/requires.txt\n'}
+[4.456291] (visual_navigation) StdoutLine: {'line': b'writing top-level names to ../../build/visual_navigation/visual_navigation.egg-info/top_level.txt\n'}
+[4.456556] (visual_navigation) StdoutLine: {'line': b"writing manifest file '../../build/visual_navigation/visual_navigation.egg-info/SOURCES.txt'\n"}
+[4.468755] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[4.544134] (-) TimerEvent: {}
+[4.567829] (visual_navigation) StdoutLine: {'line': b"reading manifest file '../../build/visual_navigation/visual_navigation.egg-info/SOURCES.txt'\n"}
+[4.570853] (visual_navigation) StdoutLine: {'line': b"writing manifest file '../../build/visual_navigation/visual_navigation.egg-info/SOURCES.txt'\n"}
+[4.571237] (visual_navigation) StdoutLine: {'line': b'running build\n'}
+[4.571415] (visual_navigation) StdoutLine: {'line': b'running build_py\n'}
+[4.571866] (visual_navigation) StdoutLine: {'line': b'creating /home/menna/visual_nav_ws/build/visual_navigation/build\n'}
+[4.572127] (visual_navigation) StdoutLine: {'line': b'creating /home/menna/visual_nav_ws/build/visual_navigation/build/lib\n'}
+[4.572304] (visual_navigation) StdoutLine: {'line': b'creating /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation\n'}
+[4.572504] (visual_navigation) StdoutLine: {'line': b'copying visual_navigation/action_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation\n'}
+[4.572727] (visual_navigation) StdoutLine: {'line': b'copying visual_navigation/camera_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation\n'}
+[4.574300] (visual_navigation) StdoutLine: {'line': b'copying visual_navigation/__init__.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation\n'}
+[4.574622] (visual_navigation) StdoutLine: {'line': b'copying visual_navigation/roi_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation\n'}
+[4.574915] (visual_navigation) StdoutLine: {'line': b'copying visual_navigation/vo_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation\n'}
+[4.575081] (visual_navigation) StdoutLine: {'line': b'copying visual_navigation/object_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation\n'}
+[4.575224] (visual_navigation) StdoutLine: {'line': b'copying visual_navigation/motion_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation\n'}
+[4.575364] (visual_navigation) StdoutLine: {'line': b'copying visual_navigation/depth_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation\n'}
+[4.575504] (visual_navigation) StdoutLine: {'line': b'copying visual_navigation/navigation_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation\n'}
+[4.575641] (visual_navigation) StdoutLine: {'line': b'running install\n'}
+[4.592970] (visual_navigation) StdoutLine: {'line': b'running install_lib\n'}
+[4.644236] (-) TimerEvent: {}
+[4.655944] (visual_navigation) StdoutLine: {'line': b'creating /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation\n'}
+[4.656952] (visual_navigation) StdoutLine: {'line': b'copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/action_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation\n'}
+[4.657241] (visual_navigation) StdoutLine: {'line': b'copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/camera_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation\n'}
+[4.657413] (visual_navigation) StdoutLine: {'line': b'copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/__init__.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation\n'}
+[4.657566] (visual_navigation) StdoutLine: {'line': b'copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/roi_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation\n'}
+[4.657796] (visual_navigation) StdoutLine: {'line': b'copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/vo_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation\n'}
+[4.658015] (visual_navigation) StdoutLine: {'line': b'copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/object_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation\n'}
+[4.658253] (visual_navigation) StdoutLine: {'line': b'copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/motion_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation\n'}
+[4.659812] (visual_navigation) StdoutLine: {'line': b'copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/depth_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation\n'}
+[4.660025] (visual_navigation) StdoutLine: {'line': b'copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/navigation_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation\n'}
+[4.660258] (visual_navigation) StdoutLine: {'line': b'byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/action_node.py to action_node.cpython-312.pyc\n'}
+[4.664991] (visual_navigation) StdoutLine: {'line': b'byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/camera_node.py to camera_node.cpython-312.pyc\n'}
+[4.665321] (visual_navigation) StdoutLine: {'line': b'byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/__init__.py to __init__.cpython-312.pyc\n'}
+[4.668982] (visual_navigation) StdoutLine: {'line': b'byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/roi_node.py to roi_node.cpython-312.pyc\n'}
+[4.669232] (visual_navigation) StdoutLine: {'line': b'byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/vo_node.py to vo_node.cpython-312.pyc\n'}
+[4.669961] (visual_navigation) StdoutLine: {'line': b'byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/object_node.py to object_node.cpython-312.pyc\n'}
+[4.671627] (visual_navigation) StdoutLine: {'line': b'byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/motion_node.py to motion_node.cpython-312.pyc\n'}
+[4.675995] (visual_navigation) StdoutLine: {'line': b'byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/depth_node.py to depth_node.cpython-312.pyc\n'}
+[4.676223] (visual_navigation) StdoutLine: {'line': b'byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/navigation_node.py to navigation_node.cpython-312.pyc\n'}
+[4.677672] (visual_navigation) StdoutLine: {'line': b'running install_data\n'}
+[4.677911] (visual_navigation) StdoutLine: {'line': b'creating /home/menna/visual_nav_ws/install/visual_navigation/share/ament_index\n'}
+[4.678134] (visual_navigation) StdoutLine: {'line': b'creating /home/menna/visual_nav_ws/install/visual_navigation/share/ament_index/resource_index\n'}
+[4.678286] (visual_navigation) StdoutLine: {'line': b'creating /home/menna/visual_nav_ws/install/visual_navigation/share/ament_index/resource_index/packages\n'}
+[4.678476] (visual_navigation) StdoutLine: {'line': b'copying resource/visual_navigation -> /home/menna/visual_nav_ws/install/visual_navigation/share/ament_index/resource_index/packages\n'}
+[4.678677] (visual_navigation) StdoutLine: {'line': b'copying package.xml -> /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation\n'}
+[4.678858] (visual_navigation) StdoutLine: {'line': b'creating /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/launch\n'}
+[4.679061] (visual_navigation) StdoutLine: {'line': b'creating /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/models\n'}
+[4.679246] (visual_navigation) StdoutLine: {'line': b'copying visual_navigation/models/depth_anything_v2_vits.pth -> /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/models\n'}
+[4.744335] (-) TimerEvent: {}
+[4.831484] (visual_navigation) StdoutLine: {'line': b'copying visual_navigation/models/yolov8n.pt -> /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/models\n'}
+[4.840518] (visual_navigation) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.844438] (-) TimerEvent: {}
+[4.944758] (-) TimerEvent: {}
+[4.949597] (visual_navigation) StdoutLine: {'line': b'Copying ../../build/visual_navigation/visual_navigation.egg-info to /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation-0.0.0-py3.12.egg-info\n'}
+[4.956986] (visual_navigation) StdoutLine: {'line': b'running install_scripts\n'}
+[5.044860] (-) TimerEvent: {}
+[5.146971] (-) TimerEvent: {}
+[5.247362] (-) TimerEvent: {}
+[5.349936] (-) TimerEvent: {}
+[5.451829] (-) TimerEvent: {}
+[5.553790] (-) TimerEvent: {}
+[5.571274] (visual_navigation) StdoutLine: {'line': b'Installing action_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation\n'}
+[5.571528] (visual_navigation) StdoutLine: {'line': b'Installing camera_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation\n'}
+[5.571684] (visual_navigation) StdoutLine: {'line': b'Installing depth_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation\n'}
+[5.571863] (visual_navigation) StdoutLine: {'line': b'Installing motion_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation\n'}
+[5.572030] (visual_navigation) StdoutLine: {'line': b'Installing navigation_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation\n'}
+[5.573613] (visual_navigation) StdoutLine: {'line': b'Installing object_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation\n'}
+[5.573756] (visual_navigation) StdoutLine: {'line': b'Installing roi_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation\n'}
+[5.573896] (visual_navigation) StdoutLine: {'line': b'Installing vo_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation\n'}
+[5.574181] (visual_navigation) StdoutLine: {'line': b"writing list of installed files to '/home/menna/visual_nav_ws/build/visual_navigation/install.log'\n"}
+[5.651985] (visual_navigation) CommandEnded: {'returncode': 0}
+[5.661127] (-) TimerEvent: {}
+[5.690922] (visual_navigation) JobEnded: {'identifier': 'visual_navigation', 'rc': 0}
+[5.763935] (-) TimerEvent: {}
+[5.868936] (-) TimerEvent: {}
+[5.969261] (-) TimerEvent: {}
+[6.069586] (-) TimerEvent: {}
+[6.169953] (-) TimerEvent: {}
+[6.270304] (-) TimerEvent: {}
+[6.370673] (-) TimerEvent: {}
+[6.471025] (-) TimerEvent: {}
+[6.572953] (-) TimerEvent: {}
+[6.673623] (-) TimerEvent: {}
+[6.773946] (-) TimerEvent: {}
+[6.876959] (-) TimerEvent: {}
+[6.978463] (-) TimerEvent: {}
+[7.078837] (-) TimerEvent: {}
+[7.179224] (-) TimerEvent: {}
+[7.279687] (-) TimerEvent: {}
+[7.309313] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[7.380953] (-) TimerEvent: {}
+[7.482379] (-) TimerEvent: {}
+[7.584339] (-) TimerEvent: {}
+[7.684871] (-) TimerEvent: {}
+[7.785680] (-) TimerEvent: {}
+[7.886067] (-) TimerEvent: {}
+[7.987738] (-) TimerEvent: {}
+[8.091957] (-) TimerEvent: {}
+[8.192343] (-) TimerEvent: {}
+[8.293902] (-) TimerEvent: {}
+[8.395947] (-) TimerEvent: {}
+[8.496281] (-) TimerEvent: {}
+[8.596619] (-) TimerEvent: {}
+[8.696957] (-) TimerEvent: {}
+[8.797317] (-) TimerEvent: {}
+[8.900992] (-) TimerEvent: {}
+[9.001390] (-) TimerEvent: {}
+[9.103955] (-) TimerEvent: {}
+[9.191818] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.204073] (-) TimerEvent: {}
+[9.304467] (-) TimerEvent: {}
+[9.404810] (-) TimerEvent: {}
+[9.505335] (-) TimerEvent: {}
+[9.605673] (-) TimerEvent: {}
+[9.706381] (-) TimerEvent: {}
+[9.808090] (-) TimerEvent: {}
+[9.909939] (-) TimerEvent: {}
+[10.010253] (-) TimerEvent: {}
+[10.111087] (-) TimerEvent: {}
+[10.211497] (-) TimerEvent: {}
+[10.314975] (-) TimerEvent: {}
+[10.415390] (-) TimerEvent: {}
+[10.515977] (-) TimerEvent: {}
+[10.619002] (-) TimerEvent: {}
+[10.719514] (-) TimerEvent: {}
+[10.820084] (-) TimerEvent: {}
+[10.924168] (-) TimerEvent: {}
+[11.045161] (-) TimerEvent: {}
+[11.169950] (-) TimerEvent: {}
+[11.271823] (-) TimerEvent: {}
+[11.375117] (-) TimerEvent: {}
+[11.475543] (-) TimerEvent: {}
+[11.575916] (-) TimerEvent: {}
+[11.676295] (-) TimerEvent: {}
+[11.776700] (-) TimerEvent: {}
+[11.786866] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.807627] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[11.878969] (-) TimerEvent: {}
+[11.983132] (-) TimerEvent: {}
+[12.083473] (-) TimerEvent: {}
+[12.183783] (-) TimerEvent: {}
+[12.284250] (-) TimerEvent: {}
+[12.385750] (-) TimerEvent: {}
+[12.470083] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /home/menna/venv-ardupilot/bin/python3  \n'}
+[12.485857] (-) TimerEvent: {}
+[12.587374] (-) TimerEvent: {}
+[12.687718] (-) TimerEvent: {}
+[12.789248] (-) TimerEvent: {}
+[12.891494] (-) TimerEvent: {}
+[12.991956] (-) TimerEvent: {}
+[13.096761] (-) TimerEvent: {}
+[13.197174] (-) TimerEvent: {}
+[13.297485] (-) TimerEvent: {}
+[13.397801] (-) TimerEvent: {}
+[13.498183] (-) TimerEvent: {}
+[13.598585] (-) TimerEvent: {}
+[13.698961] (-) TimerEvent: {}
+[13.801953] (-) TimerEvent: {}
+[13.902341] (-) TimerEvent: {}
+[14.002677] (-) TimerEvent: {}
+[14.105271] (-) TimerEvent: {}
+[14.199136] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Found Python3: /home/menna/venv-ardupilot/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[14.212973] (-) TimerEvent: {}
+[14.314753] (-) TimerEvent: {}
+[14.378267] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Configuring done (13.4s)\n'}
+[14.414853] (-) TimerEvent: {}
+[14.481742] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[14.514960] (-) TimerEvent: {}
+[14.531348] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/menna/visual_nav_ws/build/visual_navigation_interfaces\n'}
+[14.565783] (visual_navigation_interfaces) CommandEnded: {'returncode': 0}
+[14.569043] (visual_navigation_interfaces) JobProgress: {'identifier': 'visual_navigation_interfaces', 'progress': 'build'}
+[14.569175] (visual_navigation_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/menna/visual_nav_ws/build/visual_navigation_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/menna/visual_nav_ws/build/visual_navigation_interfaces', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/home/menna/gz_ws/install/ardupilot_gazebo/lib/ardupilot_gazebo/:/home/menna/gz_ws/install/ardupilot_gazebo/lib/ardupilot_gazebo:/home/menna/gz_ws/ardupilot_gazebo/build:/home/menna/gz_ws/build', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2717-2-menna-ThinkPad-P50_TIME169719', 'GZ_SIM_RESOURCE_PATH': '/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/worlds:/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/models:/opt/ros/jazzy/share:/home/menna/gz_ws/ardupilot_gazebo/models:/home/menna/gz_ws/models', 'USER': 'menna', 'LC_TIME': 'ar_EG.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/menna', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'LC_MONETARY': 'ar_EG.UTF-8', 'MANAGERPID': '2224', 'SYSTEMD_EXEC_PID': '2717', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4145', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/menna/visual_nav_ws/install:/home/menna/gz_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'menna', 'JOURNAL_STREAM': '8:19988', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'menna', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/lib/ccache:/home/menna/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/menna/venv-ardupilot/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/menna-ThinkPad-P50:@/tmp/.ICE-unix/2682,unix/menna-ThinkPad-P50:/tmp/.ICE-unix/2682', 'INVOCATION_ID': '1038f427023946c293310f2df56be981', 'GTK3_MODULES': 'xapp-gtk3-module', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv-ardupilot)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces:/home/menna/visual_nav_ws/install/visual_navigation:/home/menna/gz_ws/install/ardupilot_gazebo:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:24a88907-9b11-4608-9b60-2e712a8c03ab', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'VIRTUAL_ENV': '/home/menna/venv-ardupilot', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/menna/visual_nav_ws/build/visual_navigation_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SDF_PATH': '/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/worlds:/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/models', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages:/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages:/home/menna/Depth-Anything-V2:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces:/home/menna/gz_ws/install/ardupilot_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy'}), 'shell': False}
+[14.615069] (-) TimerEvent: {}
+[14.715598] (-) TimerEvent: {}
+[14.720919] (visual_navigation_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[14.817954] (-) TimerEvent: {}
+[14.918335] (-) TimerEvent: {}
+[15.018709] (-) TimerEvent: {}
+[15.120683] (-) TimerEvent: {}
+[15.223953] (-) TimerEvent: {}
+[15.325986] (-) TimerEvent: {}
+[15.378948] (visual_navigation_interfaces) StdoutLine: {'line': b'[  2%] Built target visual_navigation_interfaces__rosidl_generator_type_description\n'}
+[15.426970] (-) TimerEvent: {}
+[15.473015] (visual_navigation_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_visual_navigation_interfaces\n'}
+[15.527078] (-) TimerEvent: {}
+[15.546999] (visual_navigation_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[15.627191] (-) TimerEvent: {}
+[15.729758] (-) TimerEvent: {}
+[15.833954] (-) TimerEvent: {}
+[15.936945] (-) TimerEvent: {}
+[16.039956] (-) TimerEvent: {}
+[16.141950] (-) TimerEvent: {}
+[16.243077] (-) TimerEvent: {}
+[16.345940] (-) TimerEvent: {}
+[16.446547] (-) TimerEvent: {}
+[16.547224] (-) TimerEvent: {}
+[16.647541] (-) TimerEvent: {}
+[16.750259] (-) TimerEvent: {}
+[16.851086] (-) TimerEvent: {}
+[16.903037] (visual_navigation_interfaces) StdoutLine: {'line': b'[  5%] Built target visual_navigation_interfaces__cpp\n'}
+[16.952274] (-) TimerEvent: {}
+[17.053933] (-) TimerEvent: {}
+[17.156949] (-) TimerEvent: {}
+[17.261965] (-) TimerEvent: {}
+[17.362330] (-) TimerEvent: {}
+[17.463039] (-) TimerEvent: {}
+[17.563420] (-) TimerEvent: {}
+[17.667939] (-) TimerEvent: {}
+[17.709411] (visual_navigation_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[17.768151] (-) TimerEvent: {}
+[17.789444] (visual_navigation_interfaces) StdoutLine: {'line': b'creating visual_navigation_interfaces.egg-info\n'}
+[17.789719] (visual_navigation_interfaces) StdoutLine: {'line': b'writing visual_navigation_interfaces.egg-info/PKG-INFO\n'}
+[17.789865] (visual_navigation_interfaces) StdoutLine: {'line': b'writing dependency_links to visual_navigation_interfaces.egg-info/dependency_links.txt\n'}
+[17.790181] (visual_navigation_interfaces) StdoutLine: {'line': b'writing top-level names to visual_navigation_interfaces.egg-info/top_level.txt\n'}
+[17.790799] (visual_navigation_interfaces) StdoutLine: {'line': b"writing manifest file 'visual_navigation_interfaces.egg-info/SOURCES.txt'\n"}
+[17.868207] (-) TimerEvent: {}
+[17.969986] (-) TimerEvent: {}
+[18.062010] (visual_navigation_interfaces) StdoutLine: {'line': b"reading manifest file 'visual_navigation_interfaces.egg-info/SOURCES.txt'\n"}
+[18.064714] (visual_navigation_interfaces) StdoutLine: {'line': b"writing manifest file 'visual_navigation_interfaces.egg-info/SOURCES.txt'\n"}
+[18.070161] (-) TimerEvent: {}
+[18.167113] (visual_navigation_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_visual_navigation_interfaces_egg\n'}
+[18.170262] (-) TimerEvent: {}
+[18.217856] (visual_navigation_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[18.271982] (-) TimerEvent: {}
+[18.372350] (-) TimerEvent: {}
+[18.474932] (-) TimerEvent: {}
+[18.575230] (-) TimerEvent: {}
+[18.675575] (-) TimerEvent: {}
+[18.777021] (-) TimerEvent: {}
+[18.878948] (-) TimerEvent: {}
+[18.979275] (-) TimerEvent: {}
+[19.083329] (-) TimerEvent: {}
+[19.183732] (-) TimerEvent: {}
+[19.284217] (-) TimerEvent: {}
+[19.384550] (-) TimerEvent: {}
+[19.488956] (-) TimerEvent: {}
+[19.590391] (-) TimerEvent: {}
+[19.661481] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/visual_navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/visual_navigation_interfaces/action/detail/navigate__description.c.o\x1b[0m\n'}
+[19.690494] (-) TimerEvent: {}
+[19.790825] (-) TimerEvent: {}
+[19.893947] (-) TimerEvent: {}
+[19.994260] (-) TimerEvent: {}
+[20.044321] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/visual_navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/visual_navigation_interfaces/action/detail/navigate__type_support.c.o\x1b[0m\n'}
+[20.094369] (-) TimerEvent: {}
+[20.194707] (-) TimerEvent: {}
+[20.266156] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/visual_navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/visual_navigation_interfaces/action/detail/navigate__functions.c.o\x1b[0m\n'}
+[20.294811] (-) TimerEvent: {}
+[20.323291] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libvisual_navigation_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[20.394979] (-) TimerEvent: {}
+[20.453926] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 20%] Built target visual_navigation_interfaces__rosidl_generator_c\n'}
+[20.484622] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[20.495104] (-) TimerEvent: {}
+[20.598582] (-) TimerEvent: {}
+[20.698947] (-) TimerEvent: {}
+[20.799256] (-) TimerEvent: {}
+[20.899577] (-) TimerEvent: {}
+[20.999940] (-) TimerEvent: {}
+[21.101944] (-) TimerEvent: {}
+[21.202246] (-) TimerEvent: {}
+[21.302612] (-) TimerEvent: {}
+[21.403019] (-) TimerEvent: {}
+[21.503572] (-) TimerEvent: {}
+[21.520228] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/visual_navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visual_navigation_interfaces/action/detail/navigate__type_support.c.o\x1b[0m\n'}
+[21.586005] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking C shared library libvisual_navigation_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[21.603741] (-) TimerEvent: {}
+[21.705254] (-) TimerEvent: {}
+[21.727037] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 29%] Built target visual_navigation_interfaces__rosidl_typesupport_introspection_c\n'}
+[21.792003] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[21.807939] (-) TimerEvent: {}
+[21.909693] (-) TimerEvent: {}
+[22.010273] (-) TimerEvent: {}
+[22.110628] (-) TimerEvent: {}
+[22.211562] (-) TimerEvent: {}
+[22.311912] (-) TimerEvent: {}
+[22.412951] (-) TimerEvent: {}
+[22.513313] (-) TimerEvent: {}
+[22.613661] (-) TimerEvent: {}
+[22.713960] (-) TimerEvent: {}
+[22.814301] (-) TimerEvent: {}
+[22.914633] (-) TimerEvent: {}
+[23.017952] (-) TimerEvent: {}
+[23.120946] (-) TimerEvent: {}
+[23.221943] (-) TimerEvent: {}
+[23.322258] (-) TimerEvent: {}
+[23.422904] (-) TimerEvent: {}
+[23.511002] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/visual_navigation_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visual_navigation_interfaces/action/detail/navigate__type_support_c.cpp.o\x1b[0m\n'}
+[23.522997] (-) TimerEvent: {}
+[23.625087] (-) TimerEvent: {}
+[23.640088] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX shared library libvisual_navigation_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[23.727967] (-) TimerEvent: {}
+[23.828300] (-) TimerEvent: {}
+[23.928671] (-) TimerEvent: {}
+[24.001580] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 38%] Built target visual_navigation_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[24.028795] (-) TimerEvent: {}
+[24.046044] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[24.128950] (-) TimerEvent: {}
+[24.229277] (-) TimerEvent: {}
+[24.329632] (-) TimerEvent: {}
+[24.430971] (-) TimerEvent: {}
+[24.534976] (-) TimerEvent: {}
+[24.635395] (-) TimerEvent: {}
+[24.735746] (-) TimerEvent: {}
+[24.836156] (-) TimerEvent: {}
+[24.933466] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/visual_navigation_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visual_navigation_interfaces/action/navigate__type_support.cpp.o\x1b[0m\n'}
+[24.936266] (-) TimerEvent: {}
+[25.032538] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library libvisual_navigation_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[25.036381] (-) TimerEvent: {}
+[25.138253] (-) TimerEvent: {}
+[25.238957] (-) TimerEvent: {}
+[25.323785] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 47%] Built target visual_navigation_interfaces__rosidl_typesupport_cpp\n'}
+[25.339089] (-) TimerEvent: {}
+[25.354981] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[25.439946] (-) TimerEvent: {}
+[25.543070] (-) TimerEvent: {}
+[25.643966] (-) TimerEvent: {}
+[25.744332] (-) TimerEvent: {}
+[25.844869] (-) TimerEvent: {}
+[25.945276] (-) TimerEvent: {}
+[26.045961] (-) TimerEvent: {}
+[26.146419] (-) TimerEvent: {}
+[26.248701] (-) TimerEvent: {}
+[26.350216] (-) TimerEvent: {}
+[26.454950] (-) TimerEvent: {}
+[26.555402] (-) TimerEvent: {}
+[26.561069] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/visual_navigation_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visual_navigation_interfaces/action/detail/navigate__type_support.cpp.o\x1b[0m\n'}
+[26.625112] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libvisual_navigation_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[26.655515] (-) TimerEvent: {}
+[26.758954] (-) TimerEvent: {}
+[26.859304] (-) TimerEvent: {}
+[26.947557] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 55%] Built target visual_navigation_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[26.959424] (-) TimerEvent: {}
+[26.979543] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[27.060947] (-) TimerEvent: {}
+[27.161918] (-) TimerEvent: {}
+[27.264500] (-) TimerEvent: {}
+[27.364816] (-) TimerEvent: {}
+[27.465412] (-) TimerEvent: {}
+[27.566946] (-) TimerEvent: {}
+[27.667962] (-) TimerEvent: {}
+[27.768347] (-) TimerEvent: {}
+[27.868696] (-) TimerEvent: {}
+[27.969085] (-) TimerEvent: {}
+[28.071963] (-) TimerEvent: {}
+[28.172325] (-) TimerEvent: {}
+[28.274974] (-) TimerEvent: {}
+[28.377957] (-) TimerEvent: {}
+[28.478950] (-) TimerEvent: {}
+[28.577026] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/visual_navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visual_navigation_interfaces/action/detail/dds_fastrtps/navigate__type_support.cpp.o\x1b[0m\n'}
+[28.579041] (-) TimerEvent: {}
+[28.632130] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libvisual_navigation_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[28.680942] (-) TimerEvent: {}
+[28.782943] (-) TimerEvent: {}
+[28.884951] (-) TimerEvent: {}
+[28.969028] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 64%] Built target visual_navigation_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[28.985052] (-) TimerEvent: {}
+[29.004505] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[29.085377] (-) TimerEvent: {}
+[29.188050] (-) TimerEvent: {}
+[29.288519] (-) TimerEvent: {}
+[29.391116] (-) TimerEvent: {}
+[29.492324] (-) TimerEvent: {}
+[29.592669] (-) TimerEvent: {}
+[29.693290] (-) TimerEvent: {}
+[29.796943] (-) TimerEvent: {}
+[29.888022] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/visual_navigation_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/visual_navigation_interfaces/action/navigate__type_support.cpp.o\x1b[0m\n'}
+[29.897053] (-) TimerEvent: {}
+[29.953997] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libvisual_navigation_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[29.997159] (-) TimerEvent: {}
+[30.097563] (-) TimerEvent: {}
+[30.114964] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 73%] Built target visual_navigation_interfaces__rosidl_typesupport_c\n'}
+[30.197674] (-) TimerEvent: {}
+[30.200118] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 73%] Built target visual_navigation_interfaces\n'}
+[30.263578] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[30.297790] (-) TimerEvent: {}
+[30.400950] (-) TimerEvent: {}
+[30.501334] (-) TimerEvent: {}
+[30.601917] (-) TimerEvent: {}
+[30.703950] (-) TimerEvent: {}
+[30.806943] (-) TimerEvent: {}
+[30.908507] (-) TimerEvent: {}
+[31.009030] (-) TimerEvent: {}
+[31.109972] (-) TimerEvent: {}
+[31.211329] (-) TimerEvent: {}
+[31.311751] (-) TimerEvent: {}
+[31.413018] (-) TimerEvent: {}
+[31.513970] (-) TimerEvent: {}
+[31.614438] (-) TimerEvent: {}
+[31.715096] (-) TimerEvent: {}
+[31.817980] (-) TimerEvent: {}
+[31.918391] (-) TimerEvent: {}
+[32.019077] (-) TimerEvent: {}
+[32.119472] (-) TimerEvent: {}
+[32.221454] (-) TimerEvent: {}
+[32.324956] (-) TimerEvent: {}
+[32.425318] (-) TimerEvent: {}
+[32.525678] (-) TimerEvent: {}
+[32.627967] (-) TimerEvent: {}
+[32.728325] (-) TimerEvent: {}
+[32.828746] (-) TimerEvent: {}
+[32.906427] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 76%] Built target visual_navigation_interfaces__py\n'}
+[32.928863] (-) TimerEvent: {}
+[32.995296] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/visual_navigation_interfaces__rosidl_generator_py.dir/rosidl_generator_py/visual_navigation_interfaces/action/_navigate_s.c.o\x1b[0m\n'}
+[33.029043] (-) TimerEvent: {}
+[33.117108] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libvisual_navigation_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[33.129478] (-) TimerEvent: {}
+[33.232126] (-) TimerEvent: {}
+[33.329781] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 82%] Built target visual_navigation_interfaces__rosidl_generator_py\n'}
+[33.332231] (-) TimerEvent: {}
+[33.393215] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/visual_navigation_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/visual_navigation_interfaces/_visual_navigation_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[33.432340] (-) TimerEvent: {}
+[33.437384] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[33.533973] (-) TimerEvent: {}
+[33.564796] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 88%] Built target visual_navigation_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[33.624012] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/visual_navigation_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/visual_navigation_interfaces/_visual_navigation_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[33.634112] (-) TimerEvent: {}
+[33.681091] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[33.734185] (-) TimerEvent: {}
+[33.818020] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 94%] Built target visual_navigation_interfaces_s__rosidl_typesupport_c\n'}
+[33.834379] (-) TimerEvent: {}
+[33.919914] (visual_navigation_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/visual_navigation_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/visual_navigation_interfaces/_visual_navigation_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[33.934724] (-) TimerEvent: {}
+[33.989959] (visual_navigation_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[34.034768] (-) TimerEvent: {}
+[34.110092] (visual_navigation_interfaces) StdoutLine: {'line': b'[100%] Built target visual_navigation_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[34.134896] (-) TimerEvent: {}
+[34.150319] (visual_navigation_interfaces) CommandEnded: {'returncode': 0}
+[34.151778] (visual_navigation_interfaces) JobProgress: {'identifier': 'visual_navigation_interfaces', 'progress': 'install'}
+[34.182652] (visual_navigation_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/menna/visual_nav_ws/build/visual_navigation_interfaces'], 'cwd': '/home/menna/visual_nav_ws/build/visual_navigation_interfaces', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/home/menna/gz_ws/install/ardupilot_gazebo/lib/ardupilot_gazebo/:/home/menna/gz_ws/install/ardupilot_gazebo/lib/ardupilot_gazebo:/home/menna/gz_ws/ardupilot_gazebo/build:/home/menna/gz_ws/build', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2717-2-menna-ThinkPad-P50_TIME169719', 'GZ_SIM_RESOURCE_PATH': '/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/worlds:/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/models:/opt/ros/jazzy/share:/home/menna/gz_ws/ardupilot_gazebo/models:/home/menna/gz_ws/models', 'USER': 'menna', 'LC_TIME': 'ar_EG.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/menna', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'LC_MONETARY': 'ar_EG.UTF-8', 'MANAGERPID': '2224', 'SYSTEMD_EXEC_PID': '2717', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4145', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/menna/visual_nav_ws/install:/home/menna/gz_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'menna', 'JOURNAL_STREAM': '8:19988', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'menna', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/lib/ccache:/home/menna/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/menna/venv-ardupilot/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/menna-ThinkPad-P50:@/tmp/.ICE-unix/2682,unix/menna-ThinkPad-P50:/tmp/.ICE-unix/2682', 'INVOCATION_ID': '1038f427023946c293310f2df56be981', 'GTK3_MODULES': 'xapp-gtk3-module', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv-ardupilot)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces:/home/menna/visual_nav_ws/install/visual_navigation:/home/menna/gz_ws/install/ardupilot_gazebo:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:24a88907-9b11-4608-9b60-2e712a8c03ab', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'VIRTUAL_ENV': '/home/menna/venv-ardupilot', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/menna/visual_nav_ws/build/visual_navigation_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SDF_PATH': '/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/worlds:/home/menna/gz_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/models', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages:/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages:/home/menna/Depth-Anything-V2:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces:/home/menna/gz_ws/install/ardupilot_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy'}), 'shell': False}
+[34.219676] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[34.220872] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/ament_index/resource_index/rosidl_interfaces/visual_navigation_interfaces\n'}
+[34.221988] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/action/Navigate.json\n'}
+[34.222933] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces\n'}
+[34.223603] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg\n'}
+[34.224307] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[34.225073] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action\n'}
+[34.225741] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/navigate.h\n'}
+[34.226840] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail\n'}
+[34.227714] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__type_support.c\n'}
+[34.228596] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__functions.c\n'}
+[34.228929] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__functions.h\n'}
+[34.229825] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__struct.h\n'}
+[34.230832] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__type_support.h\n'}
+[34.231840] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__description.c\n'}
+[34.232269] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/library_path.sh\n'}
+[34.233093] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/library_path.dsv\n'}
+[34.233992] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_generator_c.so\n'}
+[34.235879] (-) TimerEvent: {}
+[34.237542] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_generator_c.so" to ""\n'}
+[34.239059] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces\n'}
+[34.240964] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg\n'}
+[34.241846] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[34.243374] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action\n'}
+[34.243643] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail\n'}
+[34.244611] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__rosidl_typesupport_fastrtps_c.h\n'}
+[34.244939] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[34.246584] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[34.247088] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces\n'}
+[34.247675] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg\n'}
+[34.248372] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[34.248679] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action\n'}
+[34.249346] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail\n'}
+[34.250439] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__type_support.c\n'}
+[34.250747] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__rosidl_typesupport_introspection_c.h\n'}
+[34.251483] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[34.252950] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[34.254934] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_c.so\n'}
+[34.255304] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[34.255759] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces\n'}
+[34.256558] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg\n'}
+[34.257566] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[34.257896] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action\n'}
+[34.258630] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/navigate.hpp\n'}
+[34.259042] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail\n'}
+[34.260931] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__struct.hpp\n'}
+[34.261522] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__builder.hpp\n'}
+[34.264072] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__traits.hpp\n'}
+[34.264899] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__type_support.hpp\n'}
+[34.265191] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces\n'}
+[34.265582] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg\n'}
+[34.266372] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[34.266702] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action\n'}
+[34.267296] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail\n'}
+[34.268354] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[34.268725] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/dds_fastrtps\n'}
+[34.269433] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[34.271580] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[34.271816] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces\n'}
+[34.272925] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action\n'}
+[34.273179] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail\n'}
+[34.273416] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__rosidl_typesupport_introspection_cpp.hpp\n'}
+[34.274542] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__type_support.cpp\n'}
+[34.274948] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[34.276817] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[34.277919] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_cpp.so\n'}
+[34.279097] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[34.279674] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/pythonpath.sh\n'}
+[34.281417] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/pythonpath.dsv\n'}
+[34.281663] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces-0.0.0-py3.12.egg-info\n'}
+[34.281924] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[34.282484] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[34.283046] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[34.283570] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[34.284205] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces\n'}
+[34.284791] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/__init__.py\n'}
+[34.285421] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/_visual_navigation_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[34.286231] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[34.287004] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/_visual_navigation_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[34.287664] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_c.so\n'}
+[34.288341] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/_visual_navigation_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[34.289076] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[34.289743] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action\n'}
+[34.290234] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action/__init__.py\n'}
+[34.290896] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action/_navigate.py\n'}
+[34.291791] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action/_navigate_s.c\n'}
+[34.336866] (-) TimerEvent: {}
+[34.437356] (-) TimerEvent: {}
+[34.453487] (visual_navigation_interfaces) StdoutLine: {'line': b"Listing '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces'...\n"}
+[34.453808] (visual_navigation_interfaces) StdoutLine: {'line': b"Compiling '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/__init__.py'...\n"}
+[34.454017] (visual_navigation_interfaces) StdoutLine: {'line': b"Listing '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action'...\n"}
+[34.454190] (visual_navigation_interfaces) StdoutLine: {'line': b"Compiling '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action/__init__.py'...\n"}
+[34.454366] (visual_navigation_interfaces) StdoutLine: {'line': b"Compiling '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action/_navigate.py'...\n"}
+[34.470869] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[34.472768] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[34.474001] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[34.479998] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[34.480320] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_c.so\n'}
+[34.480575] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[34.481131] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_generator_py.so\n'}
+[34.485684] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_generator_py.so" to ""\n'}
+[34.486006] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/action/Navigate.idl\n'}
+[34.486709] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/action/Navigate.action\n'}
+[34.486987] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/ament_index/resource_index/package_run_dependencies/visual_navigation_interfaces\n'}
+[34.487662] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/ament_index/resource_index/parent_prefix_path/visual_navigation_interfaces\n'}
+[34.488308] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/ament_prefix_path.sh\n'}
+[34.488916] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/ament_prefix_path.dsv\n'}
+[34.489871] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/path.sh\n'}
+[34.490633] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/path.dsv\n'}
+[34.490944] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/local_setup.bash\n'}
+[34.491943] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/local_setup.sh\n'}
+[34.492923] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/local_setup.zsh\n'}
+[34.494662] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/local_setup.dsv\n'}
+[34.495700] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.dsv\n'}
+[34.496077] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/ament_index/resource_index/packages/visual_navigation_interfaces\n'}
+[34.497349] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_generator_cExport.cmake\n'}
+[34.497719] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[34.498388] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[34.499045] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[34.499667] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[34.500325] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[34.500997] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[34.501601] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[34.502229] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_generator_cppExport.cmake\n'}
+[34.502843] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[34.503876] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[34.504165] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[34.505027] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[34.506077] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[34.506357] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[34.507549] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_generator_pyExport.cmake\n'}
+[34.508535] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[34.508912] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[34.509642] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[34.510852] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[34.511200] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[34.512037] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[34.513255] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[34.513622] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[34.514617] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfacesConfig.cmake\n'}
+[34.514891] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfacesConfig-version.cmake\n'}
+[34.515624] (visual_navigation_interfaces) StdoutLine: {'line': b'-- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.xml\n'}
+[34.522940] (visual_navigation_interfaces) CommandEnded: {'returncode': 0}
+[34.537835] (-) TimerEvent: {}
+[34.570633] (visual_navigation_interfaces) JobEnded: {'identifier': 'visual_navigation_interfaces', 'rc': 0}
+[34.574476] (-) EventReactorShutdown: {}

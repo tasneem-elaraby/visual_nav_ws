@@ -10,7 +10,6 @@ import json
 import os
 
 from ultralytics import YOLO
-from ament_index_python.packages import get_package_share_directory
 
 
 class ObjectDetectionNode(Node):
@@ -41,6 +40,10 @@ class ObjectDetectionNode(Node):
         model_path = os.path.expanduser(
             "~/visual_nav_ws/src/visual_navigation/models/yolov8n.pt"
         )
+<<<<<<< HEAD
+=======
+        self.get_logger().info(f"Loading YOLO model from: {model_path}")
+>>>>>>> f95b786 (fixed depth)
 
         if not os.path.exists(model_path):
             self.get_logger().error(f"Model not found at {model_path}")

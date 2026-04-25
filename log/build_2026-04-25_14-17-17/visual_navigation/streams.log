@@ -1,0 +1,69 @@
+[3.257s] Invoking command in '/home/menna/visual_nav_ws/src/visual_navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/menna/visual_nav_ws/build/visual_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/visual_navigation build --build-base /home/menna/visual_nav_ws/build/visual_navigation/build install --record /home/menna/visual_nav_ws/build/visual_navigation/install.log --single-version-externally-managed install_data
+[4.403s] running egg_info
+[4.403s] creating ../../build/visual_navigation/visual_navigation.egg-info
+[4.455s] writing ../../build/visual_navigation/visual_navigation.egg-info/PKG-INFO
+[4.455s] writing dependency_links to ../../build/visual_navigation/visual_navigation.egg-info/dependency_links.txt
+[4.456s] writing entry points to ../../build/visual_navigation/visual_navigation.egg-info/entry_points.txt
+[4.456s] writing requirements to ../../build/visual_navigation/visual_navigation.egg-info/requires.txt
+[4.456s] writing top-level names to ../../build/visual_navigation/visual_navigation.egg-info/top_level.txt
+[4.456s] writing manifest file '../../build/visual_navigation/visual_navigation.egg-info/SOURCES.txt'
+[4.568s] reading manifest file '../../build/visual_navigation/visual_navigation.egg-info/SOURCES.txt'
+[4.571s] writing manifest file '../../build/visual_navigation/visual_navigation.egg-info/SOURCES.txt'
+[4.571s] running build
+[4.571s] running build_py
+[4.572s] creating /home/menna/visual_nav_ws/build/visual_navigation/build
+[4.572s] creating /home/menna/visual_nav_ws/build/visual_navigation/build/lib
+[4.572s] creating /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+[4.572s] copying visual_navigation/action_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+[4.574s] copying visual_navigation/camera_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+[4.574s] copying visual_navigation/__init__.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+[4.575s] copying visual_navigation/roi_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+[4.575s] copying visual_navigation/vo_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+[4.575s] copying visual_navigation/object_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+[4.575s] copying visual_navigation/motion_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+[4.575s] copying visual_navigation/depth_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+[4.575s] copying visual_navigation/navigation_node.py -> /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation
+[4.575s] running install
+[4.593s] running install_lib
+[4.656s] creating /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+[4.657s] copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/action_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+[4.657s] copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/camera_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+[4.657s] copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/__init__.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+[4.657s] copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/roi_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+[4.658s] copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/vo_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+[4.658s] copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/object_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+[4.658s] copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/motion_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+[4.660s] copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/depth_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+[4.660s] copying /home/menna/visual_nav_ws/build/visual_navigation/build/lib/visual_navigation/navigation_node.py -> /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation
+[4.660s] byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/action_node.py to action_node.cpython-312.pyc
+[4.665s] byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/camera_node.py to camera_node.cpython-312.pyc
+[4.665s] byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/__init__.py to __init__.cpython-312.pyc
+[4.669s] byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/roi_node.py to roi_node.cpython-312.pyc
+[4.669s] byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/vo_node.py to vo_node.cpython-312.pyc
+[4.670s] byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/object_node.py to object_node.cpython-312.pyc
+[4.671s] byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/motion_node.py to motion_node.cpython-312.pyc
+[4.676s] byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/depth_node.py to depth_node.cpython-312.pyc
+[4.676s] byte-compiling /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation/navigation_node.py to navigation_node.cpython-312.pyc
+[4.677s] running install_data
+[4.678s] creating /home/menna/visual_nav_ws/install/visual_navigation/share/ament_index
+[4.678s] creating /home/menna/visual_nav_ws/install/visual_navigation/share/ament_index/resource_index
+[4.678s] creating /home/menna/visual_nav_ws/install/visual_navigation/share/ament_index/resource_index/packages
+[4.678s] copying resource/visual_navigation -> /home/menna/visual_nav_ws/install/visual_navigation/share/ament_index/resource_index/packages
+[4.678s] copying package.xml -> /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation
+[4.679s] creating /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/launch
+[4.679s] creating /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/models
+[4.679s] copying visual_navigation/models/depth_anything_v2_vits.pth -> /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/models
+[4.831s] copying visual_navigation/models/yolov8n.pt -> /home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/models
+[4.840s] running install_egg_info
+[4.949s] Copying ../../build/visual_navigation/visual_navigation.egg-info to /home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages/visual_navigation-0.0.0-py3.12.egg-info
+[4.957s] running install_scripts
+[5.571s] Installing action_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[5.571s] Installing camera_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[5.571s] Installing depth_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[5.572s] Installing motion_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[5.573s] Installing navigation_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[5.573s] Installing object_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[5.574s] Installing roi_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[5.574s] Installing vo_node script to /home/menna/visual_nav_ws/install/visual_navigation/lib/visual_navigation
+[5.574s] writing list of installed files to '/home/menna/visual_nav_ws/build/visual_navigation/install.log'
+[5.652s] Invoked command in '/home/menna/visual_nav_ws/src/visual_navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/menna/visual_nav_ws/build/visual_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/visual_navigation build --build-base /home/menna/visual_nav_ws/build/visual_navigation/build install --record /home/menna/visual_nav_ws/build/visual_navigation/install.log --single-version-externally-managed install_data

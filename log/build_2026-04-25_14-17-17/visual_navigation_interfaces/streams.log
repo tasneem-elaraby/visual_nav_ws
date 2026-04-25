@@ -1,0 +1,231 @@
+[0.900s] Invoking command in '/home/menna/visual_nav_ws/build/visual_navigation_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/cmake /home/menna/visual_nav_ws/src/visual_navigation_interfaces -DCMAKE_INSTALL_PREFIX=/home/menna/visual_nav_ws/install/visual_navigation_interfaces
+[1.452s] -- The C compiler identification is GNU 13.3.0
+[1.832s] -- The CXX compiler identification is GNU 13.3.0
+[1.944s] -- Detecting C compiler ABI info
+[2.339s] -- Detecting C compiler ABI info - done
+[2.371s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[2.371s] -- Detecting C compile features
+[2.374s] -- Detecting C compile features - done
+[2.412s] -- Detecting CXX compiler ABI info
+[2.795s] -- Detecting CXX compiler ABI info - done
+[2.820s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[2.821s] -- Detecting CXX compile features
+[2.822s] -- Detecting CXX compile features - done
+[2.849s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.557s] -- Found Python3: /home/menna/venv-ardupilot/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.980s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[4.006s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.261s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.443s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[7.283s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[9.166s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[11.761s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.782s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[12.444s] -- Found PythonExtra: /home/menna/venv-ardupilot/bin/python3  
+[14.173s] -- Found Python3: /home/menna/venv-ardupilot/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[14.352s] -- Configuring done (13.4s)
+[14.456s] -- Generating done (0.1s)
+[14.505s] -- Build files have been written to: /home/menna/visual_nav_ws/build/visual_navigation_interfaces
+[14.540s] Invoked command in '/home/menna/visual_nav_ws/build/visual_navigation_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/cmake /home/menna/visual_nav_ws/src/visual_navigation_interfaces -DCMAKE_INSTALL_PREFIX=/home/menna/visual_nav_ws/install/visual_navigation_interfaces
+[14.544s] Invoking command in '/home/menna/visual_nav_ws/build/visual_navigation_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/cmake --build /home/menna/visual_nav_ws/build/visual_navigation_interfaces -- -j8 -l8
+[14.695s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[15.353s] [  2%] Built target visual_navigation_interfaces__rosidl_generator_type_description
+[15.447s] [  2%] Built target ament_cmake_python_copy_visual_navigation_interfaces
+[15.521s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[16.877s] [  5%] Built target visual_navigation_interfaces__cpp
+[17.683s] running egg_info
+[17.763s] creating visual_navigation_interfaces.egg-info
+[17.764s] writing visual_navigation_interfaces.egg-info/PKG-INFO
+[17.764s] writing dependency_links to visual_navigation_interfaces.egg-info/dependency_links.txt
+[17.764s] writing top-level names to visual_navigation_interfaces.egg-info/top_level.txt
+[17.765s] writing manifest file 'visual_navigation_interfaces.egg-info/SOURCES.txt'
+[18.036s] reading manifest file 'visual_navigation_interfaces.egg-info/SOURCES.txt'
+[18.039s] writing manifest file 'visual_navigation_interfaces.egg-info/SOURCES.txt'
+[18.141s] [  5%] Built target ament_cmake_python_build_visual_navigation_interfaces_egg
+[18.192s] [  8%] [34m[1mGenerating C code for ROS interfaces[0m
+[19.636s] [ 11%] [32mBuilding C object CMakeFiles/visual_navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/visual_navigation_interfaces/action/detail/navigate__description.c.o[0m
+[20.018s] [ 14%] [32mBuilding C object CMakeFiles/visual_navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/visual_navigation_interfaces/action/detail/navigate__type_support.c.o[0m
+[20.240s] [ 17%] [32mBuilding C object CMakeFiles/visual_navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/visual_navigation_interfaces/action/detail/navigate__functions.c.o[0m
+[20.297s] [ 20%] [32m[1mLinking C shared library libvisual_navigation_interfaces__rosidl_generator_c.so[0m
+[20.428s] [ 20%] Built target visual_navigation_interfaces__rosidl_generator_c
+[20.459s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[21.494s] [ 26%] [32mBuilding C object CMakeFiles/visual_navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visual_navigation_interfaces/action/detail/navigate__type_support.c.o[0m
+[21.560s] [ 29%] [32m[1mLinking C shared library libvisual_navigation_interfaces__rosidl_typesupport_introspection_c.so[0m
+[21.701s] [ 29%] Built target visual_navigation_interfaces__rosidl_typesupport_introspection_c
+[21.766s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[23.485s] [ 35%] [32mBuilding CXX object CMakeFiles/visual_navigation_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visual_navigation_interfaces/action/detail/navigate__type_support_c.cpp.o[0m
+[23.614s] [ 38%] [32m[1mLinking CXX shared library libvisual_navigation_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[23.976s] [ 38%] Built target visual_navigation_interfaces__rosidl_typesupport_fastrtps_c
+[24.020s] [ 41%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[24.908s] [ 44%] [32mBuilding CXX object CMakeFiles/visual_navigation_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visual_navigation_interfaces/action/navigate__type_support.cpp.o[0m
+[25.007s] [ 47%] [32m[1mLinking CXX shared library libvisual_navigation_interfaces__rosidl_typesupport_cpp.so[0m
+[25.298s] [ 47%] Built target visual_navigation_interfaces__rosidl_typesupport_cpp
+[25.329s] [ 50%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[26.535s] [ 52%] [32mBuilding CXX object CMakeFiles/visual_navigation_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visual_navigation_interfaces/action/detail/navigate__type_support.cpp.o[0m
+[26.599s] [ 55%] [32m[1mLinking CXX shared library libvisual_navigation_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[26.922s] [ 55%] Built target visual_navigation_interfaces__rosidl_typesupport_introspection_cpp
+[26.954s] [ 58%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[28.551s] [ 61%] [32mBuilding CXX object CMakeFiles/visual_navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visual_navigation_interfaces/action/detail/dds_fastrtps/navigate__type_support.cpp.o[0m
+[28.606s] [ 64%] [32m[1mLinking CXX shared library libvisual_navigation_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[28.943s] [ 64%] Built target visual_navigation_interfaces__rosidl_typesupport_fastrtps_cpp
+[28.979s] [ 67%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[29.862s] [ 70%] [32mBuilding CXX object CMakeFiles/visual_navigation_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/visual_navigation_interfaces/action/navigate__type_support.cpp.o[0m
+[29.928s] [ 73%] [32m[1mLinking CXX shared library libvisual_navigation_interfaces__rosidl_typesupport_c.so[0m
+[30.089s] [ 73%] Built target visual_navigation_interfaces__rosidl_typesupport_c
+[30.174s] [ 73%] Built target visual_navigation_interfaces
+[30.238s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[32.880s] [ 76%] Built target visual_navigation_interfaces__py
+[32.969s] [ 79%] [32mBuilding C object CMakeFiles/visual_navigation_interfaces__rosidl_generator_py.dir/rosidl_generator_py/visual_navigation_interfaces/action/_navigate_s.c.o[0m
+[33.091s] [ 82%] [32m[1mLinking C shared library libvisual_navigation_interfaces__rosidl_generator_py.so[0m
+[33.304s] [ 82%] Built target visual_navigation_interfaces__rosidl_generator_py
+[33.367s] [ 85%] [32mBuilding C object CMakeFiles/visual_navigation_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/visual_navigation_interfaces/_visual_navigation_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[33.411s] [ 88%] [32m[1mLinking C shared module rosidl_generator_py/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[33.539s] [ 88%] Built target visual_navigation_interfaces_s__rosidl_typesupport_fastrtps_c
+[33.598s] [ 91%] [32mBuilding C object CMakeFiles/visual_navigation_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/visual_navigation_interfaces/_visual_navigation_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[33.655s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_c.so[0m
+[33.792s] [ 94%] Built target visual_navigation_interfaces_s__rosidl_typesupport_c
+[33.894s] [ 97%] [32mBuilding C object CMakeFiles/visual_navigation_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/visual_navigation_interfaces/_visual_navigation_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[33.964s] [100%] [32m[1mLinking C shared module rosidl_generator_py/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[34.084s] [100%] Built target visual_navigation_interfaces_s__rosidl_typesupport_introspection_c
+[34.125s] Invoked command in '/home/menna/visual_nav_ws/build/visual_navigation_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/cmake --build /home/menna/visual_nav_ws/build/visual_navigation_interfaces -- -j8 -l8
+[34.157s] Invoking command in '/home/menna/visual_nav_ws/build/visual_navigation_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/cmake --install /home/menna/visual_nav_ws/build/visual_navigation_interfaces
+[34.194s] -- Install configuration: ""
+[34.195s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/ament_index/resource_index/rosidl_interfaces/visual_navigation_interfaces
+[34.196s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/action/Navigate.json
+[34.197s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces
+[34.198s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg
+[34.198s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg/rosidl_generator_c__visibility_control.h
+[34.199s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action
+[34.200s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/navigate.h
+[34.201s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail
+[34.202s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__type_support.c
+[34.203s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__functions.c
+[34.203s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__functions.h
+[34.204s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__struct.h
+[34.205s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__type_support.h
+[34.206s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__description.c
+[34.206s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/library_path.sh
+[34.207s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/library_path.dsv
+[34.208s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_generator_c.so
+[34.212s] -- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_generator_c.so" to ""
+[34.214s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces
+[34.215s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg
+[34.217s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[34.217s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action
+[34.218s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail
+[34.219s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__rosidl_typesupport_fastrtps_c.h
+[34.219s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_fastrtps_c.so
+[34.221s] -- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[34.221s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces
+[34.222s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg
+[34.222s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[34.223s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action
+[34.223s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail
+[34.224s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__type_support.c
+[34.225s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__rosidl_typesupport_introspection_c.h
+[34.225s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_introspection_c.so
+[34.227s] -- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[34.229s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_c.so
+[34.229s] -- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_c.so" to ""
+[34.230s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces
+[34.231s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg
+[34.232s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[34.232s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action
+[34.233s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/navigate.hpp
+[34.233s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail
+[34.235s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__struct.hpp
+[34.235s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__builder.hpp
+[34.238s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__traits.hpp
+[34.239s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__type_support.hpp
+[34.239s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces
+[34.240s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg
+[34.240s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[34.241s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action
+[34.241s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail
+[34.242s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__rosidl_typesupport_fastrtps_cpp.hpp
+[34.243s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/dds_fastrtps
+[34.243s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[34.246s] -- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[34.246s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces
+[34.247s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action
+[34.247s] -- Up-to-date: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail
+[34.247s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__rosidl_typesupport_introspection_cpp.hpp
+[34.249s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/include/visual_navigation_interfaces/visual_navigation_interfaces/action/detail/navigate__type_support.cpp
+[34.249s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_introspection_cpp.so
+[34.251s] -- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[34.252s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_cpp.so
+[34.253s] -- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_typesupport_cpp.so" to ""
+[34.254s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/pythonpath.sh
+[34.255s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/pythonpath.dsv
+[34.256s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces-0.0.0-py3.12.egg-info
+[34.256s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[34.256s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[34.257s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[34.258s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[34.258s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces
+[34.259s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/__init__.py
+[34.259s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/_visual_navigation_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[34.260s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[34.261s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/_visual_navigation_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[34.262s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_c.so
+[34.262s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/_visual_navigation_interfaces_s.ep.rosidl_typesupport_c.c
+[34.263s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_introspection_c.so
+[34.264s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action
+[34.264s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action/__init__.py
+[34.265s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action/_navigate.py
+[34.266s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action/_navigate_s.c
+[34.428s] Listing '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces'...
+[34.428s] Compiling '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/__init__.py'...
+[34.428s] Listing '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action'...
+[34.428s] Compiling '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action/__init__.py'...
+[34.428s] Compiling '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/action/_navigate.py'...
+[34.445s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[34.447s] -- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[34.448s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_introspection_c.so
+[34.454s] -- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[34.454s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_c.so
+[34.455s] -- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages/visual_navigation_interfaces/visual_navigation_interfaces_s__rosidl_typesupport_c.so" to ""
+[34.455s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_generator_py.so
+[34.460s] -- Set non-toolchain portion of runtime path of "/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/libvisual_navigation_interfaces__rosidl_generator_py.so" to ""
+[34.460s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/action/Navigate.idl
+[34.461s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/action/Navigate.action
+[34.461s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/ament_index/resource_index/package_run_dependencies/visual_navigation_interfaces
+[34.462s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/ament_index/resource_index/parent_prefix_path/visual_navigation_interfaces
+[34.462s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/ament_prefix_path.sh
+[34.463s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/ament_prefix_path.dsv
+[34.464s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/path.sh
+[34.465s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/environment/path.dsv
+[34.465s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/local_setup.bash
+[34.466s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/local_setup.sh
+[34.467s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/local_setup.zsh
+[34.469s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/local_setup.dsv
+[34.470s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.dsv
+[34.470s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/ament_index/resource_index/packages/visual_navigation_interfaces
+[34.471s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_generator_cExport.cmake
+[34.472s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_generator_cExport-noconfig.cmake
+[34.472s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[34.473s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[34.474s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[34.474s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[34.475s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_cExport.cmake
+[34.476s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[34.476s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_generator_cppExport.cmake
+[34.477s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[34.478s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[34.478s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[34.479s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[34.480s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_cppExport.cmake
+[34.480s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[34.482s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_generator_pyExport.cmake
+[34.483s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/export_visual_navigation_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[34.483s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/rosidl_cmake-extras.cmake
+[34.484s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[34.485s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[34.485s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[34.486s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[34.487s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[34.488s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[34.489s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfacesConfig.cmake
+[34.489s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/cmake/visual_navigation_interfacesConfig-version.cmake
+[34.490s] -- Installing: /home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.xml
+[34.497s] Invoked command in '/home/menna/visual_nav_ws/build/visual_navigation_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/cmake --install /home/menna/visual_nav_ws/build/visual_navigation_interfaces

@@ -1,0 +1,9 @@
+[console_scripts]
+action_node = visual_navigation.action_node:main
+camera_node = visual_navigation.camera_node:main
+depth_node = visual_navigation.depth_node:main
+motion_node = visual_navigation.motion_node:main
+navigation_node = visual_navigation.navigation_node:main
+object_node = visual_navigation.object_node:main
+roi_node = visual_navigation.roi_node:main
+vo_node = visual_navigation.vo_node:main

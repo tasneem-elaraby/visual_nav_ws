@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "visual_navigation_interfaces/action/Navigate_Feedback",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "visual_navigation_interfaces/action/Navigate_Feedback",
+      "hash_string": "RIHS01_829e751109fc8ae2ddeb008795d54e5791d01f6a529d06e56adbf537a794614a"
+    }
+  ]
+}

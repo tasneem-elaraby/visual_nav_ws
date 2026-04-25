@@ -3,166 +3,169 @@
 import json
 import numpy as np
 import rclpy
-from rclpy.node import Node
+from rclpy.node import Node         #import rospy
 from sensor_msgs.msg import Image
 from std_msgs.msg import String
 from cv_bridge import CvBridge
 import cv2
-import os
+import os           #build file paths and check if files exist
 import torch
 
-# Try importing DepthAnything
+from ament_index_python.packages import get_package_share_directory     #rospkg.RosPack().get_path('package_name')
+import os
+
+# DepthAnything import
 try:
     from depth_anything_v2.dpt import DepthAnythingV2
     DEPTH_AVAILABLE = True
 except Exception as e:
-    print(f"[WARN] DepthAnything not available: {e}")
+    print(f"[ERROR] DepthAnythingV2 import failed: {e}")
     DEPTH_AVAILABLE = False
 
 
 class DepthEstimationNode(Node):
 
     def __init__(self):
-        super().__init__('depth_estimation_node')
+        super().__init__('depth_estimation_node')       #rospy.init_node('depth_estimation_node')
 
-        self.bridge = CvBridge()
+        self.bridge = CvBridge()        #CvBridge instance
         self.model = None
 
-        # frame control for performance
-        self.frame_count = 0
-        self.skip_rate = 3   # run model every 3 frames
+        pkg_share = get_package_share_directory('exam_proctoring_pkg')
 
-        # path to model
-        model_path = os.path.expanduser(
-            "~/visual_nav_ws/src/visual_navigation/models/depth_anything_v2_vits.pth"
+        model_path = os.path.join(
+            pkg_share,
+            "models",
+            "depth_anything",
+            "depth_anything_v2_vits.pth"
         )
 
-        self.get_logger().info(f"Loading model from: {model_path}")
+        self.get_logger().info(f"Model path: {model_path}")       #rospy.loginfo(...)
 
-        # load model if available
-        if DEPTH_AVAILABLE and os.path.exists(model_path):
+        if not os.path.exists(model_path):
+            self.get_logger().error(" Model not found in install space. Did you run colcon build?")
+            model_path = None
+        # LOAD MODEL
+        if DEPTH_AVAILABLE and model_path is not None:
             try:
                 self.model = DepthAnythingV2(
                     encoder='vits',
-                    features=64,
-                    out_channels=[48, 96, 192, 384]
+                    features=64,                        #the internal feature dimension size
+                    out_channels=[48, 96, 192, 384]     #the output channels at each decoder layer
                 )
 
-                checkpoint = torch.load(model_path, map_location='cpu')
-                state_dict = checkpoint.get('state_dict') or checkpoint.get('model') or checkpoint
+                checkpoint = torch.load(        #reads the .pth
+                    model_path,
+                    map_location='cpu'
+                )
+
+                if isinstance(checkpoint, dict):        #handle different pytorch models
+                    state_dict = (
+                        checkpoint.get('state_dict') or
+                        checkpoint.get('model') or
+                        checkpoint
+                    )
+                else:
+                    state_dict = checkpoint
 
                 self.model.load_state_dict(state_dict, strict=False)
-                self.model.eval()
+                self.model.eval()     #sets the model to evaluation mode
 
-                self.get_logger().info("Depth model loaded")
+                self.get_logger().info(" Depth model loaded successfully")
 
             except Exception as e:
-                self.get_logger().error(f"Model load failed: {e}")
+                self.get_logger().error(f" Model loading failed: {e}")
                 self.model = None
-        else:
-            self.get_logger().error("Depth model not found")
 
-        # ROS interfaces
-        self.create_subscription(Image, '/camera_frames', self.callback, 10)
-        self.pub_depth = self.create_publisher(String, '/depth_data', 10)
+        # ROS IO
+        self.pub_depth_img = self.create_publisher(Image, '/depth_data', 10)    #rospy.publisher('/depth_data', Image, queue_size=10)
+        self.pub_metrics = self.create_publisher(String, '/object_depth', 10)
 
-        # optional visualization window
+        self.create_subscription(           #rospy.Subscriber('/camera_frames', Image, self.callback)
+            Image,
+            '/camera_frames',
+            self.callback,
+            10
+        )
+
         try:
-            cv2.namedWindow("Depth Map", cv2.WINDOW_NORMAL)
+            cv2.namedWindow("Depth Map", cv2.WINDOW_NORMAL) 
         except:
             pass
 
-        self.last_depth = None
+        self.get_logger().info("Depth Estimation Node Ready")
 
-        self.get_logger().info("Depth Node Ready")
-
+    # =========================================================
     def callback(self, msg):
 
-        if self.model is None:
-            return
-
         try:
-            frame = self.bridge.imgmsg_to_cv2(msg, 'bgr8')
-            self.frame_count += 1
+            frame = self.bridge.imgmsg_to_cv2(msg, "bgr8")
 
-            # run model every few frames (for CPU performance)
-            if self.frame_count % self.skip_rate == 0 or self.last_depth is None:
-
-                # smaller resolution for speed
-                inp = cv2.resize(frame, (256, 256))
-
+            # DEPTH INFERENCE
+            if self.model is not None:
+                inp = cv2.resize(frame, (384, 384))
                 depth_small = self.model.infer_image(inp)
 
-                # resize back to original size
                 depth = cv2.resize(
                     depth_small,
-                    (frame.shape[1], frame.shape[0])
+                    (frame.shape[1], frame.shape[0]) # width,height
                 )
-
-                self.last_depth = depth
-
             else:
-                # reuse last depth to avoid gaps
-                depth = self.last_depth
+                h, w = frame.shape[:2]
+                depth = np.random.rand(h, w).astype(np.float32)
 
-            # visualization (not every frame)
-            if self.frame_count % 10 == 0:
-                dmin, dmax = float(depth.min()), float(depth.max())
-                depth_vis = ((depth - dmin) / (dmax - dmin + 1e-6) * 255).astype(np.uint8)
-                depth_color = cv2.applyColorMap(depth_vis, cv2.COLORMAP_INFERNO)
+            
+            # NORMALIZATION
+            dmin, dmax = float(depth.min()), float(depth.max())
 
+            depth_vis = ((depth - dmin) / (dmax - dmin + 1e-6) * 255).astype(np.uint8)
+
+            depth_color = cv2.applyColorMap(depth_vis, cv2.COLORMAP_INFERNO)
+
+            try:
                 cv2.imshow("Depth Map", depth_color)
                 cv2.waitKey(1)
+            except:
+                pass
 
-            # compute regions
+            # PUBLISH IMAGE
+            img_msg = self.bridge.cv2_to_imgmsg(depth_vis, encoding='mono8')
+            img_msg.header.stamp = self.get_clock().now().to_msg()
+            self.pub_depth_img.publish(img_msg)
+
+            # CENTER DEPTH
             h, w = depth.shape
             cx, cy = w // 2, h // 2
 
-            center_crop = depth[cy-25:cy+25, cx-25:cx+25]
-            left_crop   = depth[cy-25:cy+25, 0:w//3]
-            right_crop  = depth[cy-25:cy+25, (2*w)//3:w]
+            crop = depth[
+                max(0, cy-30):min(h, cy+30),
+                max(0, cx-30):min(w, cx+30)
+            ]
 
-            center_depth = float(np.mean(center_crop))
-            left_depth   = float(np.mean(left_crop))
-            right_depth  = float(np.mean(right_crop))
+            center_depth = float(np.mean(crop)) if crop.size else 0.0
 
-            # simple decision based on relative values
-            if center_depth < left_depth and center_depth < right_depth:
-                zone = "near"
-            elif center_depth < (left_depth + right_depth) / 2:
-                zone = "medium"
-            else:
-                zone = "far"
-
-            # timestamp for synchronization
-            timestamp = msg.header.stamp.sec + msg.header.stamp.nanosec * 1e-9
-
-            # publish result
-            self.pub_depth.publish(String(data=json.dumps({
-                "timestamp": round(timestamp, 6),
-                "center_depth": round(center_depth, 4),
-                "left_depth": round(left_depth, 4),
-                "right_depth": round(right_depth, 4),
-                "zone": zone
+            self.pub_metrics.publish(String(data=json.dumps({
+                "center_depth": center_depth,
+                "min_depth": dmin,
+                "max_depth": dmax
             })))
 
         except Exception as e:
-            self.get_logger().error(f"Depth error: {e}")
+            self.get_logger().error(f"Callback error: {e}")
 
 
-def main(args=None):
-    rclpy.init(args=args)
+def main():
+    rclpy.init()
     node = DepthEstimationNode()
 
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
-    cv2.destroyAllWindows()
-    node.destroy_node()
-    rclpy.shutdown()
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

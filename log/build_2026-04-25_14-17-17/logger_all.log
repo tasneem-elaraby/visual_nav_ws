@@ -1,0 +1,213 @@
+[0.495s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.495s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7860878a82f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x78608788bec0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x78608788bec0>>, mixin_verb=('build',))
+[0.639s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.640s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.640s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.640s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.640s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.640s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.640s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/menna/visual_nav_ws'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation) by extension 'ignore'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation) by extension 'ignore_ament_install'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation) by extensions ['colcon_pkg']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation) by extension 'colcon_pkg'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation) by extensions ['colcon_meta']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation) by extension 'colcon_meta'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation) by extensions ['ros']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation) by extension 'ros'
+[0.735s] DEBUG:colcon.colcon_core.package_identification:Package 'src/visual_navigation' with type 'ros.ament_python' and name 'visual_navigation'
+[0.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation_interfaces) by extension 'ignore'
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation_interfaces) by extension 'ignore_ament_install'
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation_interfaces) by extensions ['colcon_pkg']
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation_interfaces) by extension 'colcon_pkg'
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation_interfaces) by extensions ['colcon_meta']
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation_interfaces) by extension 'colcon_meta'
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation_interfaces) by extensions ['ros']
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_navigation_interfaces) by extension 'ros'
+[0.738s] DEBUG:colcon.colcon_core.package_identification:Package 'src/visual_navigation_interfaces' with type 'ros.ament_cmake' and name 'visual_navigation_interfaces'
+[0.738s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.738s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.738s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.738s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.738s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.784s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.784s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.786s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/menna/visual_nav_ws/install/visual_navigation_interfaces' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.791s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/menna/visual_nav_ws/install/visual_navigation' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.792s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/menna/visual_nav_ws/install/visual_navigation_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.795s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/menna/visual_nav_ws/install
+[0.796s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/menna/gz_ws/install
+[0.803s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 325 installed packages in /opt/ros/jazzy
+[0.809s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.964s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation' build argument 'cmake_args' from command line to 'None'
+[0.964s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation' build argument 'cmake_target' from command line to 'None'
+[0.964s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.964s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.964s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.964s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.964s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.964s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.964s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.965s] DEBUG:colcon.colcon_core.verb:Building package 'visual_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/menna/visual_nav_ws/build/visual_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/menna/visual_nav_ws/install/visual_navigation', 'merge_install': False, 'path': '/home/menna/visual_nav_ws/src/visual_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.966s] Level 5:colcon.colcon_core.verb:set package 'visual_navigation_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.966s] DEBUG:colcon.colcon_core.verb:Building package 'visual_navigation_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/menna/visual_nav_ws/build/visual_navigation_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/menna/visual_nav_ws/install/visual_navigation_interfaces', 'merge_install': False, 'path': '/home/menna/visual_nav_ws/src/visual_navigation_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.967s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.968s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.969s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/menna/visual_nav_ws/src/visual_navigation' with build type 'ament_python'
+[0.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('visual_navigation', 'ament_prefix_path')
+[0.977s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/hook/ament_prefix_path.ps1'
+[0.978s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/hook/ament_prefix_path.dsv'
+[0.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/hook/ament_prefix_path.sh'
+[0.986s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.986s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.999s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/menna/visual_nav_ws/src/visual_navigation_interfaces' with build type 'ament_cmake'
+[1.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/menna/visual_nav_ws/src/visual_navigation_interfaces'
+[1.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.878s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/menna/visual_nav_ws/src/visual_navigation'
+[1.878s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.878s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.901s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/menna/visual_nav_ws/build/visual_navigation_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/cmake /home/menna/visual_nav_ws/src/visual_navigation_interfaces -DCMAKE_INSTALL_PREFIX=/home/menna/visual_nav_ws/install/visual_navigation_interfaces
+[4.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/menna/visual_nav_ws/src/visual_navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/menna/visual_nav_ws/build/visual_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/visual_navigation build --build-base /home/menna/visual_nav_ws/build/visual_navigation/build install --record /home/menna/visual_nav_ws/build/visual_navigation/install.log --single-version-externally-managed install_data
+[6.628s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/menna/visual_nav_ws/src/visual_navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/menna/visual_nav_ws/build/visual_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/visual_navigation build --build-base /home/menna/visual_nav_ws/build/visual_navigation/build install --record /home/menna/visual_nav_ws/build/visual_navigation/install.log --single-version-externally-managed install_data
+[6.632s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation' for CMake module files
+[6.633s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation' for CMake config files
+[6.635s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation/lib'
+[6.635s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation/bin'
+[6.636s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation/lib/pkgconfig/visual_navigation.pc'
+[6.637s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation/lib/python3.12/site-packages'
+[6.637s] Level 1:colcon.colcon_core.shell:create_environment_hook('visual_navigation', 'pythonpath')
+[6.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/hook/pythonpath.ps1'
+[6.642s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/hook/pythonpath.dsv'
+[6.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/hook/pythonpath.sh'
+[6.646s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation/bin'
+[6.646s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(visual_navigation)
+[6.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/package.ps1'
+[6.652s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/package.dsv'
+[6.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/package.sh'
+[6.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/package.bash'
+[6.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/menna/visual_nav_ws/install/visual_navigation/share/visual_navigation/package.zsh'
+[6.663s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/menna/visual_nav_ws/install/visual_navigation/share/colcon-core/packages/visual_navigation)
+[15.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/menna/visual_nav_ws/build/visual_navigation_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/cmake /home/menna/visual_nav_ws/src/visual_navigation_interfaces -DCMAKE_INSTALL_PREFIX=/home/menna/visual_nav_ws/install/visual_navigation_interfaces
+[15.548s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/menna/visual_nav_ws/build/visual_navigation_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/cmake --build /home/menna/visual_nav_ws/build/visual_navigation_interfaces -- -j8 -l8
+[35.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/menna/visual_nav_ws/build/visual_navigation_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/cmake --build /home/menna/visual_nav_ws/build/visual_navigation_interfaces -- -j8 -l8
+[35.158s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/menna/visual_nav_ws/build/visual_navigation_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/cmake --install /home/menna/visual_nav_ws/build/visual_navigation_interfaces
+[35.495s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(visual_navigation_interfaces)
+[35.496s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces' for CMake module files
+[35.497s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces' for CMake config files
+[35.499s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/menna/visual_nav_ws/build/visual_navigation_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/menna/visual_nav_ws/install/visual_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/cmake --install /home/menna/visual_nav_ws/build/visual_navigation_interfaces
+[35.500s] Level 1:colcon.colcon_core.shell:create_environment_hook('visual_navigation_interfaces', 'cmake_prefix_path')
+[35.501s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/cmake_prefix_path.ps1'
+[35.502s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/cmake_prefix_path.dsv'
+[35.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/cmake_prefix_path.sh'
+[35.504s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib'
+[35.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('visual_navigation_interfaces', 'ld_library_path_lib')
+[35.504s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/ld_library_path_lib.ps1'
+[35.505s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/ld_library_path_lib.dsv'
+[35.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/ld_library_path_lib.sh'
+[35.506s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/bin'
+[35.506s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/pkgconfig/visual_navigation_interfaces.pc'
+[35.507s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages'
+[35.507s] Level 1:colcon.colcon_core.shell:create_environment_hook('visual_navigation_interfaces', 'pythonpath')
+[35.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/pythonpath.ps1'
+[35.508s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/pythonpath.dsv'
+[35.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/pythonpath.sh'
+[35.510s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/bin'
+[35.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.ps1'
+[35.512s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.dsv'
+[35.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.sh'
+[35.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.bash'
+[35.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.zsh'
+[35.517s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/colcon-core/packages/visual_navigation_interfaces)
+[35.519s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(visual_navigation_interfaces)
+[35.520s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces' for CMake module files
+[35.522s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces' for CMake config files
+[35.524s] Level 1:colcon.colcon_core.shell:create_environment_hook('visual_navigation_interfaces', 'cmake_prefix_path')
+[35.524s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/cmake_prefix_path.ps1'
+[35.525s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/cmake_prefix_path.dsv'
+[35.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/cmake_prefix_path.sh'
+[35.528s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib'
+[35.528s] Level 1:colcon.colcon_core.shell:create_environment_hook('visual_navigation_interfaces', 'ld_library_path_lib')
+[35.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/ld_library_path_lib.ps1'
+[35.530s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/ld_library_path_lib.dsv'
+[35.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/ld_library_path_lib.sh'
+[35.531s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/bin'
+[35.532s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/pkgconfig/visual_navigation_interfaces.pc'
+[35.532s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/lib/python3.12/site-packages'
+[35.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('visual_navigation_interfaces', 'pythonpath')
+[35.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/pythonpath.ps1'
+[35.534s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/pythonpath.dsv'
+[35.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/hook/pythonpath.sh'
+[35.537s] Level 1:colcon.colcon_core.environment:checking '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/bin'
+[35.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.ps1'
+[35.539s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.dsv'
+[35.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.sh'
+[35.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.bash'
+[35.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/visual_navigation_interfaces/package.zsh'
+[35.545s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/menna/visual_nav_ws/install/visual_navigation_interfaces/share/colcon-core/packages/visual_navigation_interfaces)
+[35.548s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[35.549s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[35.549s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[35.549s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[35.568s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[35.568s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[35.568s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[35.614s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[35.615s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/menna/visual_nav_ws/install/local_setup.ps1'
+[35.616s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/menna/visual_nav_ws/install/_local_setup_util_ps1.py'
+[35.623s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/menna/visual_nav_ws/install/setup.ps1'
+[35.628s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/menna/visual_nav_ws/install/local_setup.sh'
+[35.629s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/menna/visual_nav_ws/install/_local_setup_util_sh.py'
+[35.630s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/menna/visual_nav_ws/install/setup.sh'
+[35.635s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/menna/visual_nav_ws/install/local_setup.bash'
+[35.636s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/menna/visual_nav_ws/install/setup.bash'
+[35.641s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/menna/visual_nav_ws/install/local_setup.zsh'
+[35.642s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/menna/visual_nav_ws/install/setup.zsh'
