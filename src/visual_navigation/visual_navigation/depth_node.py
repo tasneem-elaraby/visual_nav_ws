@@ -11,12 +11,12 @@ import cv2
 import os
 import torch
 
-# Try importing model
+# Try importing DepthAnything
 try:
     from depth_anything_v2.dpt import DepthAnythingV2
     DEPTH_AVAILABLE = True
 except Exception as e:
-    print(f"[WARN] DepthAnythingV2 not found – using fallback: {e}")
+    print(f"[WARN] DepthAnything not available: {e}")
     DEPTH_AVAILABLE = False
 
 
@@ -25,25 +25,21 @@ class DepthEstimationNode(Node):
     def __init__(self):
         super().__init__('depth_estimation_node')
 
-        self.declare_parameter('depth_threshold', 0.5)
-        self.depth_threshold = self.get_parameter('depth_threshold').value
-
-        # derive zone boundaries from depth_threshold
-        # near < threshold/2 < medium < threshold < far
-        self.near_limit   = self.depth_threshold / 2.0     # e.g. 0.25
-        self.medium_limit = self.depth_threshold            # e.g. 0.50
-
         self.bridge = CvBridge()
         self.model = None
 
-        # package name
+        # frame control for performance
+        self.frame_count = 0
+        self.skip_rate = 3   # run model every 3 frames
+
+        # path to model
         model_path = os.path.expanduser(
             "~/visual_nav_ws/src/visual_navigation/models/depth_anything_v2_vits.pth"
         )
 
-        self.get_logger().info(f"Looking for depth model at: {model_path}")
+        self.get_logger().info(f"Loading model from: {model_path}")
 
-        # Load model if available
+        # load model if available
         if DEPTH_AVAILABLE and os.path.exists(model_path):
             try:
                 self.model = DepthAnythingV2(
@@ -58,114 +54,112 @@ class DepthEstimationNode(Node):
                 self.model.load_state_dict(state_dict, strict=False)
                 self.model.eval()
 
-                self.get_logger().info("Depth model loaded successfully")
+                self.get_logger().info("Depth model loaded")
 
             except Exception as e:
-                self.get_logger().error(f"Model loading failed: {e}")
+                self.get_logger().error(f"Model load failed: {e}")
                 self.model = None
         else:
-            self.get_logger().warn("⚠ Using random depth fallback")
+            self.get_logger().error("Depth model not found")
 
-        # Subscriber
+        # ROS interfaces
         self.create_subscription(Image, '/camera_frames', self.callback, 10)
-
-        # pulish JSON to /depth_data
         self.pub_depth = self.create_publisher(String, '/depth_data', 10)
 
-        # Visualization window
+        # optional visualization window
         try:
             cv2.namedWindow("Depth Map", cv2.WINDOW_NORMAL)
-        except Exception:
+        except:
             pass
+
+        self.last_depth = None
 
         self.get_logger().info("Depth Node Ready")
 
     def callback(self, msg):
+
+        if self.model is None:
+            return
+
         try:
             frame = self.bridge.imgmsg_to_cv2(msg, 'bgr8')
+            self.frame_count += 1
 
-            # Depth estimation
-            if self.model is not None:
-                inp = cv2.resize(frame, (384, 384))
+            # run model every few frames (for CPU performance)
+            if self.frame_count % self.skip_rate == 0 or self.last_depth is None:
+
+                # smaller resolution for speed
+                inp = cv2.resize(frame, (256, 256))
+
                 depth_small = self.model.infer_image(inp)
-                depth = cv2.resize(depth_small, (frame.shape[1], frame.shape[0]))
+
+                # resize back to original size
+                depth = cv2.resize(
+                    depth_small,
+                    (frame.shape[1], frame.shape[0])
+                )
+
+                self.last_depth = depth
+
             else:
-                h, w = frame.shape[:2]
-                depth = np.random.rand(h, w).astype(np.float32)
+                # reuse last depth to avoid gaps
+                depth = self.last_depth
 
-            # Normalize for visualization
-            dmin, dmax = float(depth.min()), float(depth.max())
-            depth_vis = ((depth - dmin) / (dmax - dmin + 1e-6) * 255).astype(np.uint8)
+            # visualization (not every frame)
+            if self.frame_count % 10 == 0:
+                dmin, dmax = float(depth.min()), float(depth.max())
+                depth_vis = ((depth - dmin) / (dmax - dmin + 1e-6) * 255).astype(np.uint8)
+                depth_color = cv2.applyColorMap(depth_vis, cv2.COLORMAP_INFERNO)
 
-            depth_color = cv2.applyColorMap(depth_vis, cv2.COLORMAP_INFERNO)
-
-            try:
                 cv2.imshow("Depth Map", depth_color)
                 cv2.waitKey(1)
-            except Exception:
-                pass
 
-            #  COMPUTATION
+            # compute regions
             h, w = depth.shape
             cx, cy = w // 2, h // 2
 
-            # --- center zone (what's directly ahead) ---
-            center_crop = depth[
-                max(0, cy - 30): min(h, cy + 30),
-                max(0, cx - 30): min(w, cx + 30)
-            ]
-            center_depth = float(np.mean(center_crop)) if center_crop.size else 0.0
+            center_crop = depth[cy-25:cy+25, cx-25:cx+25]
+            left_crop   = depth[cy-25:cy+25, 0:w//3]
+            right_crop  = depth[cy-25:cy+25, (2*w)//3:w]
 
-            # --- left zone (left third of frame, vertically centered) ---
-            left_crop = depth[
-                max(0, cy - 30): min(h, cy + 30),
-                0: w // 3
-            ]
-            left_depth = float(np.mean(left_crop)) if left_crop.size else 0.0
+            center_depth = float(np.mean(center_crop))
+            left_depth   = float(np.mean(left_crop))
+            right_depth  = float(np.mean(right_crop))
 
-            # --- right zone (right third of frame, vertically centered) ---
-            right_crop = depth[
-                max(0, cy - 30): min(h, cy + 30),
-                (2 * w) // 3: w
-            ]
-            right_depth = float(np.mean(right_crop)) if right_crop.size else 0.0
-
-            # Zone classification based on center depth
-            depth_range = dmax - dmin + 1e-6
-            norm_center = (center_depth - dmin) / depth_range
-
-            if norm_center < self.near_limit:
+            # simple decision based on relative values
+            if center_depth < left_depth and center_depth < right_depth:
                 zone = "near"
-            elif norm_center < self.medium_limit:
+            elif center_depth < (left_depth + right_depth) / 2:
                 zone = "medium"
             else:
                 zone = "far"
 
-            # timestamp for downstream sync
+            # timestamp for synchronization
             timestamp = msg.header.stamp.sec + msg.header.stamp.nanosec * 1e-9
 
-            # OUTPUT for nav node
+            # publish result
             self.pub_depth.publish(String(data=json.dumps({
-                "timestamp":    round(timestamp, 6),
+                "timestamp": round(timestamp, 6),
                 "center_depth": round(center_depth, 4),
-                "left_depth":   round(left_depth, 4),
-                "right_depth":  round(right_depth, 4),
-                "min_depth":    round(dmin, 4),
-                "max_depth":    round(dmax, 4),
-                "zone":         zone
+                "left_depth": round(left_depth, 4),
+                "right_depth": round(right_depth, 4),
+                "zone": zone
             })))
 
         except Exception as e:
-            self.get_logger().error(f"Depth callback error: {e}")
+            self.get_logger().error(f"Depth error: {e}")
 
 
 def main(args=None):
     rclpy.init(args=args)
     node = DepthEstimationNode()
+
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
+
+    cv2.destroyAllWindows()
     node.destroy_node()
     rclpy.shutdown()
 
