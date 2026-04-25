@@ -11,8 +11,6 @@ import cv2
 import os
 import torch
 
-from ament_index_python.packages import get_package_share_directory
-
 # Try importing model
 try:
     from depth_anything_v2.dpt import DepthAnythingV2
@@ -30,12 +28,18 @@ class DepthEstimationNode(Node):
         self.declare_parameter('depth_threshold', 0.5)
         self.depth_threshold = self.get_parameter('depth_threshold').value
 
+        # derive zone boundaries from depth_threshold
+        # near < threshold/2 < medium < threshold < far
+        self.near_limit   = self.depth_threshold / 2.0     # e.g. 0.25
+        self.medium_limit = self.depth_threshold            # e.g. 0.50
+
         self.bridge = CvBridge()
         self.model = None
 
         # package name
-        pkg_share = get_package_share_directory('visual_navigation')
-        model_path = os.path.join(pkg_share, 'models', 'depth_anything_v2_vits.pth')
+        model_path = os.path.expanduser(
+            "~/visual_nav_ws/src/visual_navigation/models/depth_anything_v2_vits.pth"
+        )
 
         self.get_logger().info(f"Looking for depth model at: {model_path}")
 
@@ -101,34 +105,54 @@ class DepthEstimationNode(Node):
             except Exception:
                 pass
 
-            #  COMPUTATION 
+            #  COMPUTATION
             h, w = depth.shape
             cx, cy = w // 2, h // 2
 
-            crop = depth[
+            # --- center zone (what's directly ahead) ---
+            center_crop = depth[
                 max(0, cy - 30): min(h, cy + 30),
                 max(0, cx - 30): min(w, cx + 30)
             ]
+            center_depth = float(np.mean(center_crop)) if center_crop.size else 0.0
 
-            center_depth = float(np.mean(crop)) if crop.size else 0.0
+            # --- left zone (left third of frame, vertically centered) ---
+            left_crop = depth[
+                max(0, cy - 30): min(h, cy + 30),
+                0: w // 3
+            ]
+            left_depth = float(np.mean(left_crop)) if left_crop.size else 0.0
 
-            # Zone classification
+            # --- right zone (right third of frame, vertically centered) ---
+            right_crop = depth[
+                max(0, cy - 30): min(h, cy + 30),
+                (2 * w) // 3: w
+            ]
+            right_depth = float(np.mean(right_crop)) if right_crop.size else 0.0
+
+            # Zone classification based on center depth
             depth_range = dmax - dmin + 1e-6
             norm_center = (center_depth - dmin) / depth_range
 
-            if norm_center < 0.33:
+            if norm_center < self.near_limit:
                 zone = "near"
-            elif norm_center < 0.66:
+            elif norm_center < self.medium_limit:
                 zone = "medium"
             else:
                 zone = "far"
 
+            # timestamp for downstream sync
+            timestamp = msg.header.stamp.sec + msg.header.stamp.nanosec * 1e-9
+
             # OUTPUT for nav node
             self.pub_depth.publish(String(data=json.dumps({
+                "timestamp":    round(timestamp, 6),
                 "center_depth": round(center_depth, 4),
-                "min_depth": round(dmin, 4),
-                "max_depth": round(dmax, 4),
-                "zone": zone
+                "left_depth":   round(left_depth, 4),
+                "right_depth":  round(right_depth, 4),
+                "min_depth":    round(dmin, 4),
+                "max_depth":    round(dmax, 4),
+                "zone":         zone
             })))
 
         except Exception as e:
