@@ -11,10 +11,20 @@ from visual_navigation_interfaces.action import Navigate
 
 class ActionExecutionNode(Node):
 
+    # Duration (seconds) each command type runs for
+    COMMAND_DURATIONS = {
+        "MOVE_FORWARD":  2.0,
+        "MOVE_LEFT":     1.5,
+        "MOVE_RIGHT":    1.5,
+        "MOVE_BACKWARD": 1.5,
+        "STOP":          0.0,
+        "STATIONARY":    0.0,
+    }
+
     def __init__(self):
         super().__init__('action_execution_node')
 
-        # parameter for how long each action runs
+        # fallback duration for unknown commands
         self.declare_parameter('action_duration', 1.0)
         self.action_duration = self.get_parameter('action_duration').value
 
@@ -39,8 +49,11 @@ class ActionExecutionNode(Node):
             cancel_callback=self.cancel_cb
         )
 
-        # action client sends goals to the same server (for testing)
+        # action client sends goals to the same server
         self._action_client = ActionClient(self, Navigate, '/navigate_action')
+
+        # track the active goal handle so we can cancel it before sending a new one
+        self._active_goal_handle = None
 
         self.get_logger().info("Action node started")
 
@@ -52,12 +65,18 @@ class ActionExecutionNode(Node):
 
             self.get_logger().info(f"Received command: {command}")
 
+            # cancel any currently running goal before sending a new one
+            if self._active_goal_handle is not None:
+                self.get_logger().info("Cancelling previous goal before sending new one")
+                self._active_goal_handle.cancel_goal_async()
+                self._active_goal_handle = None
+
             self.send_goal(command)
 
         except Exception as e:
             self.get_logger().error(f"Command error: {e}")
 
-    # send action goal
+    # send action goal and track the goal handle
     def send_goal(self, command):
 
         if not self._action_client.wait_for_server(timeout_sec=1.0):
@@ -69,10 +88,21 @@ class ActionExecutionNode(Node):
 
         self.get_logger().info(f"Sending goal: {command}")
 
-        self._action_client.send_goal_async(
+        future = self._action_client.send_goal_async(
             goal_msg,
             feedback_callback=self.feedback_cb
         )
+        # attach callback to check whether goal was accepted or rejected
+        future.add_done_callback(lambda f: self._goal_response_cb(f, command))
+
+    # called when server responds to our goal request
+    def _goal_response_cb(self, future, command):
+        goal_handle = future.result()
+        if not goal_handle.accepted:
+            self.get_logger().warn(f"Goal REJECTED by server: {command}")
+            return
+        self.get_logger().info(f"Goal ACCEPTED: {command}")
+        self._active_goal_handle = goal_handle
 
     # receive feedback during execution
     def feedback_cb(self, feedback_msg):
@@ -99,22 +129,27 @@ class ActionExecutionNode(Node):
         result = Navigate.Result()
 
         action_map = {
-            "MOVE_LEFT": "Steering LEFT",
-            "MOVE_RIGHT": "Steering RIGHT",
-            "MOVE_FORWARD": "Moving FORWARD",
-            "STOP": "STOPPING",
-            "STATIONARY": "Idle"
+            "MOVE_LEFT":     "Steering LEFT",
+            "MOVE_RIGHT":    "Steering RIGHT",
+            "MOVE_FORWARD":  "Moving FORWARD",
+            "MOVE_BACKWARD": "Moving BACKWARD",
+            "STOP":          "STOPPING",
+            "STATIONARY":    "Idle"
         }
 
         description = action_map.get(command, "Unknown")
 
+        # use per-command duration; fall back to node parameter for unknowns
+        duration = self.COMMAND_DURATIONS.get(command, self.action_duration)
+
         elapsed = 0.0
         step = 0.5
 
-        while elapsed < self.action_duration:
+        while elapsed < duration:
 
             if goal_handle.is_cancel_requested:
                 goal_handle.canceled()
+                self._active_goal_handle = None
                 return result
 
             feedback.status = f"{description} ({elapsed:.1f}s)"
@@ -131,6 +166,7 @@ class ActionExecutionNode(Node):
 
         result.success = True
         goal_handle.succeed()
+        self._active_goal_handle = None
 
         self.get_logger().info("Action completed")
 
