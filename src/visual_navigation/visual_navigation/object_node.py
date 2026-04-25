@@ -39,19 +39,17 @@ class ObjectDetectionNode(Node):
         # Load YOLO model correctly
         # ----------------------------
         model_path = os.path.expanduser(
-            "~/visual_nav_ws/src/visual_navigation/visual_navigation/models/yolov8n.pt"
+            "~/visual_nav_ws/src/visual_navigation/models/yolov8n.pt"
         )
-        self.model = YOLO(model_path)
-
-        self.get_logger().info(f"Loading YOLO model from: {model_path}")
 
         if not os.path.exists(model_path):
             self.get_logger().error(f"Model not found at {model_path}")
             raise FileNotFoundError(model_path)
 
         self.model = YOLO(model_path)
+        self.get_logger().info(f"Loading YOLO model from: {model_path}")
 
-        self.get_logger().info("✅ Object Detection Node Started")
+        self.get_logger().info("Object Detection Node Started")
 
     def image_callback(self, msg):
         # Convert ROS Image → OpenCV
@@ -75,11 +73,14 @@ class ObjectDetectionNode(Node):
                 label = self.model.names[cls_id]
 
                 x1, y1, x2, y2 = map(int, box.xyxy[0])
+                cx = (x1 + x2) // 2
+                cy = (y1 + y2) // 2
 
                 detections.append({
-                    "label": label,
+                    "label":      label,
                     "confidence": conf,
-                    "bbox": [x1, y1, x2, y2]
+                    "bbox":       [x1, y1, x2, y2],
+                    "center":     [cx, cy]
                 })
 
                 # Draw bounding box (debug only)
