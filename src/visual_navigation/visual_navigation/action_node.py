@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import json
-import asyncio
+import time
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionServer, ActionClient, CancelResponse, GoalResponse
@@ -17,8 +17,8 @@ class ActionExecutionNode(Node):
         "MOVE_LEFT":     1.5,
         "MOVE_RIGHT":    1.5,
         "MOVE_BACKWARD": 1.5,
-        "STOP":          0.0,
-        "STATIONARY":    0.0,
+        "STOP":          0.2,   # small delay to avoid instant glitch
+        "STATIONARY":    0.2,
     }
 
     def __init__(self):
@@ -52,22 +52,30 @@ class ActionExecutionNode(Node):
         # action client sends goals to the same server
         self._action_client = ActionClient(self, Navigate, '/navigate_action')
 
-        # track the active goal handle so we can cancel it before sending a new one
+        # track current goal
         self._active_goal_handle = None
+
+        # avoid sending duplicate commands
+        self.last_command = None
 
         self.get_logger().info("Action node started")
 
-    # receives command from navigation node
     def command_cb(self, msg):
         try:
             data = json.loads(msg.data)
             command = data.get('command', 'STOP')
 
+            # skip duplicate commands
+            if command == self.last_command:
+                return
+
+            self.last_command = command
+
             self.get_logger().info(f"Received command: {command}")
 
-            # cancel any currently running goal before sending a new one
+            # cancel current goal if exists
             if self._active_goal_handle is not None:
-                self.get_logger().info("Cancelling previous goal before sending new one")
+                self.get_logger().info("Cancelling previous goal")
                 self._active_goal_handle.cancel_goal_async()
                 self._active_goal_handle = None
 
@@ -76,7 +84,6 @@ class ActionExecutionNode(Node):
         except Exception as e:
             self.get_logger().error(f"Command error: {e}")
 
-    # send action goal and track the goal handle
     def send_goal(self, command):
 
         if not self._action_client.wait_for_server(timeout_sec=1.0):
@@ -92,35 +99,32 @@ class ActionExecutionNode(Node):
             goal_msg,
             feedback_callback=self.feedback_cb
         )
-        # attach callback to check whether goal was accepted or rejected
+
         future.add_done_callback(lambda f: self._goal_response_cb(f, command))
 
-    # called when server responds to our goal request
     def _goal_response_cb(self, future, command):
         goal_handle = future.result()
+
         if not goal_handle.accepted:
-            self.get_logger().warn(f"Goal REJECTED by server: {command}")
+            self.get_logger().warn(f"Goal rejected: {command}")
             return
-        self.get_logger().info(f"Goal ACCEPTED: {command}")
+
+        self.get_logger().info(f"Goal accepted: {command}")
         self._active_goal_handle = goal_handle
 
-    # receive feedback during execution
     def feedback_cb(self, feedback_msg):
         feedback = feedback_msg.feedback
         self.get_logger().info(f"Feedback: {feedback.status}")
 
-    # accept incoming goals
     def goal_cb(self, goal_request):
         self.get_logger().info(f"Goal received: {goal_request.command}")
         return GoalResponse.ACCEPT
 
-    # handle cancel request
     def cancel_cb(self, goal_handle):
         self.get_logger().info("Cancel requested")
         return CancelResponse.ACCEPT
 
-    # main execution logic
-    async def execute_cb(self, goal_handle):
+    def execute_cb(self, goal_handle):
 
         command = goal_handle.request.command
         self.get_logger().info(f"Executing: {command}")
@@ -139,11 +143,10 @@ class ActionExecutionNode(Node):
 
         description = action_map.get(command, "Unknown")
 
-        # use per-command duration; fall back to node parameter for unknowns
         duration = self.COMMAND_DURATIONS.get(command, self.action_duration)
 
         elapsed = 0.0
-        step = 0.5
+        step = 0.2
 
         while elapsed < duration:
 
@@ -155,10 +158,10 @@ class ActionExecutionNode(Node):
             feedback.status = f"{description} ({elapsed:.1f}s)"
             goal_handle.publish_feedback(feedback)
 
-            await asyncio.sleep(step)
+            time.sleep(step)
             elapsed += step
 
-        # publish completion status
+        # publish completion
         self.pub_status.publish(String(data=json.dumps({
             "status": "completed",
             "command": command
