@@ -15,6 +15,10 @@ class VisualOdometryNode(Node):
         self.declare_parameter('focal_length', 500.0)
         self.focal_length = self.get_parameter('focal_length').value
 
+        # minimum pixel displacement to classify as directional motion
+        self.declare_parameter('motion_threshold', 2.0)
+        self.motion_threshold = self.get_parameter('motion_threshold').value
+
         # Subscriber
         self.create_subscription(String, '/motion_data', self.callback, 10)
 
@@ -53,18 +57,18 @@ class VisualOdometryNode(Node):
                 if abs(avg_dx) > abs(avg_dy):
                     # Horizontal motion
                     # Optical-flow : scene moves RIGHT → camera moves LEFT
-                    if avg_dx > 2.0:
+                    if avg_dx > self.motion_threshold:
                         direction = "moving_left"
-                    elif avg_dx < -2.0:
+                    elif avg_dx < -self.motion_threshold:
                         direction = "moving_right"
                     else:
                         direction = "stationary"
                 else:
                     # Vertical motion
                     # Scene moving DOWN → camera moving FORWARD (zooming in)
-                    if avg_dy > 2.0:
+                    if avg_dy > self.motion_threshold:
                         direction = "moving_forward"
-                    elif avg_dy < -2.0:
+                    elif avg_dy < -self.motion_threshold:
                         direction = "moving_backward"
                     else:
                         direction = "stationary"
