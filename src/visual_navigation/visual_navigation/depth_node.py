@@ -95,7 +95,7 @@ class DepthEstimationNode(Node):
 
         self.get_logger().info("Depth Estimation Node Ready")
 
-    # =========================================================
+    
     def callback(self, msg):
 
         try:
