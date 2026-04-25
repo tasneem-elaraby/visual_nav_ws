@@ -11,62 +11,72 @@ class CameraStreamNode(Node):
     def __init__(self):
         super().__init__('camera_stream_node')
 
-        # Parameters 
-        self.declare_parameter('camera_source', '0')   # '0' = webcam, or file path
-        self.declare_parameter('frame_rate', 10)       # FPS
+        # Parameters
+        self.declare_parameter('camera_source', "0")   # 0 = webcam or video path
+        self.declare_parameter('frame_rate', 10)
 
-        # ✅ Correct way to read parameters
-        camera_source = self.get_parameter('camera_source').value
-        frame_rate    = self.get_parameter('frame_rate').value
+        self.camera_source = self.get_parameter('camera_source').value
+        self.frame_rate = self.get_parameter('frame_rate').value
 
-        # ✅ Safety check (prevents crash)
-        if frame_rate <= 0:
-            self.get_logger().warn("Invalid frame_rate → using default 10 FPS")
-            frame_rate = 10
+        if self.frame_rate <= 0:
+            self.get_logger().warn("Invalid frame_rate, using default 10 FPS")
+            self.frame_rate = 10
 
-        # Publisher 
+        # Publisher
         self.publisher_ = self.create_publisher(Image, '/camera_frames', 10)
 
-        # OpenCV capture 
-        if str(camera_source).isdigit():
-            self.cap = cv2.VideoCapture(int(camera_source))
-        else:
-            self.cap = cv2.VideoCapture(camera_source)
+        # Open camera/video
+        self.cap = self.open_source(self.camera_source)
 
-        if not self.cap.isOpened():
-            self.get_logger().error(f'Cannot open camera source: {camera_source}')
-            raise RuntimeError('Camera source unavailable')
+        if self.cap is None or not self.cap.isOpened():
+            self.get_logger().error(f'Cannot open source: {self.camera_source}')
+            self.cap = None
+            return
 
         self.bridge = CvBridge()
 
-        # Timer publishes at the requested frame rate
-        period = 1.0 / frame_rate
+        period = 1.0 / self.frame_rate
         self.timer = self.create_timer(period, self.publish_frame)
 
         self.get_logger().info(
-            f'CameraStreamNode started | source={camera_source} | fps={frame_rate}'
+            f'Camera node started | source={self.camera_source} | fps={self.frame_rate}'
         )
 
+    def open_source(self, source):
+        if str(source).isdigit():
+            return cv2.VideoCapture(int(source))
+        else:
+            return cv2.VideoCapture(source)
+
     def publish_frame(self):
+        if self.cap is None:
+            return
+
         ret, frame = self.cap.read()
 
         if not ret:
-            self.get_logger().warn('Failed to grab frame – looping or restarting.')
+            self.get_logger().warn("Restarting video...")
+
+            # reset to first frame
             self.cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
-            return
 
-        # Convert to ROS image
+            # try again
+            ret, frame = self.cap.read()
+
+            # if still failed → reopen
+            if not ret:
+                self.get_logger().warn("Reopening video source...")
+                self.cap.release()
+                self.cap = self.open_source(self.camera_source)
+                return
+
         msg = self.bridge.cv2_to_imgmsg(frame, encoding='bgr8')
-
-        # Add timestamp
         msg.header.stamp = self.get_clock().now().to_msg()
 
-        # Publish
         self.publisher_.publish(msg)
 
     def destroy_node(self):
-        # ✅ Clean resource release
-        if hasattr(self, 'cap'):
+        if self.cap is not None:
             self.cap.release()
         super().destroy_node()
 
@@ -80,10 +90,10 @@ def main(args=None):
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
-    finally:
-        node.destroy_node()
-        cv2.destroyAllWindows()
-        rclpy.shutdown()
+
+    node.destroy_node()
+    cv2.destroyAllWindows()
+    rclpy.shutdown()
 
 
 if __name__ == '__main__':
